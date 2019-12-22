@@ -33,7 +33,6 @@ header#top {
 @media screen and (max-width: 660px) {
     header#top {
         position: relative;
-
         grid-template-columns: auto 1fr auto;
         grid-template-areas: "name . external";
     }
@@ -97,6 +96,20 @@ header#top ul#external-links > li a {
     background-size: 2em;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+@media screen and (max-width: 420px) {
+    header#top h1 {
+        font-size: 18px;
+    }
+
+    header#top ul#external-links > li a {
+        width: 1.6em;
+        background-size: 1.6em;
+        margin: 0 3px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
 
 header#top ul#external-links > li a.external-linkedin {
