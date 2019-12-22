@@ -248,6 +248,9 @@ section.content.categorized header .title {
 }
 
 section.content.categorized header .period {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    padding-left: 5px;
     text-transform: uppercase;
     float: right;
 }
