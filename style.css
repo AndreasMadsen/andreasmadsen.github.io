@@ -292,6 +292,10 @@ section.content#portfolio article > img.smaller, section.content#portfolio artic
     max-width: 270px;
 }
 
+section.content#portfolio article > img.half, section.content#portfolio article > video.half {
+    max-width: 150px;
+}
+
 
 section.content#portfolio article > div.description {
     grid-area: description;

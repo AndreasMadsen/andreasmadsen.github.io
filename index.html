@@ -188,7 +188,7 @@
                 <div class="title">Visualizing and understanding RNNs – PracticalAI</div>
                 <div class="period">Jun 2019</div>
             </header>
-            <img alt="PracticalAI" src="img/2019-practical-ai.png" width="150px">
+            <img class="half" alt="PracticalAI" src="img/2019-practical-ai.png">
             <div class="description">
                 <p>
                     I was interviewed by PractialAI on my Distill publication that became highly
@@ -293,7 +293,9 @@
                     machine learning and advanced non-parametric statistics to classify data into a
                     recommendation for what tool to use next.
                 </p>
-                <p>I was later involved in hiring and managing the team that now maintains it.</p>
+                <p>
+                    I was later involved in hiring and managing the team that now maintains it.
+                </p>
             </div>
             <ul class="links">
                 <li><a href="https://www.nearform.com/blog/introducing-node-clinic-a-performance-toolkit-for-node-js-developers/">blogpost</a></li>
@@ -301,42 +303,107 @@
                 <li><a href="https://www.youtube.com/watch?v=y7PZ4q5gk8o">talk by David Mark Clements</a></li>
             </ul>
         </article>
-      <!--
         <article>
-          <header>
-            <h2 class="name">Thesis</h2>
-            <div class="title">MSc. thesis</div>
-            <div class="period">Aug 2017</div>
-          </header>
+            <header>
+                <h2 class="name">Thesis</h2>
+                <div class="title">MSc. thesis</div>
+                <div class="period">Aug 2017</div>
+            </header>
+            <img alt="MSc thesis" src="img/2017-msc-thesis.png">
+            <div class="description">
+                <p>
+                    A semi-supervised neural machine translation model for small
+                    bilingual datasets. The model used the ByteNet model (Kalchbrenner, et. al.) together
+                    with a beam-search marginalization approach for semi-supervised learning.
+                </p>
+            </div>
+            <ul class="links">
+                <li><a href="https://github.com/AndreasMadsen/master-thesis">code</a></li>
+                <li><a href="https://github.com/AndreasMadsen/master-thesis/blob/master/thesis.pdf">thesis</a></li>
+                <li><a href="https://github.com/AndreasMadsen/master-thesis/blob/master/presentation.pdf">slides</a></li>
+            </ul>
         </article>
         <article>
-          <header>
-            <h2 class="name">Open Source</h2>
-            <div class="title">Node.js core - async_hooks</div>
-            <div class="period">May 2017</div>
-          </header>
+            <header>
+                <h2 class="name">Open Source</h2>
+                <div class="title">Node.js core - async_hooks</div>
+                <div class="period">May 2017</div>
+            </header>
+            <img class="half" alt="Node.js async_hooks" src="img/2017-nodejs-async-hooks.png">
+            <div class="description">
+                <p>
+                    Was a critial part of getting the <code>async_hooks</code> module implemented in the Node.js core runtime.
+                    This module allows users to monitor all asynchronous operations happing in the application.
+                </p>
+            </div>
+            <ul class="links">
+                <li><a href="https://nodejs.org/dist/latest-v8.x/docs/api/async_hooks.html">documentation</a></li>
+                <li><a href="https://github.com/nodejs/node/pull/12892">main pull request</a></li>
+            </ul>
         </article>
         <article>
-          <header>
-            <h2 class="name">Open Source</h2>
-            <div class="title">TensorFlow - sparsemax</div>
-            <div class="period">Feb 2017</div>
-          </header>
+            <header>
+                <h2 class="name">Open Source</h2>
+                <div class="title">Official TensorFlow implementation of sparsemax</div>
+                <div class="period">Feb 2017</div>
+            </header>
+            <img class="half" alt="TensorFlow sparsemax" src="img/2017-sparsemax.png">
+            <div class="description">
+                <p>
+                    Implemented the sparsemax operator in the TensorFlow core, as part of a course project.
+                    This involved Python, C++, and CUDA.
+                </p>
+            </div>
+            <ul class="links">
+                <li><a href="https://github.com/AndreasMadsen/course-02456-sparsemax/blob/master/latex/report/report.pdf">report</a></li>
+                <li><a href="https://github.com/tensorflow/tensorflow/pull/6387">main pull request</a></li>
+            </ul>
         </article>
         <article>
-          <header>
-            <h2 class="name">Open Source</h2>
-            <div class="title">Dprof</div>
-            <div class="period">Dec 2016</div>
-          </header>
+            <header>
+                <h2 class="name">Open Source</h2>
+                <div class="title">Dprof</div>
+                <div class="period">Dec 2016</div>
+            </header>
+            <img alt="dprof" src="img/2016-dprof.png">
+            <div class="description">
+                <p>
+                    Implemented interactive profiling software for monitoring all
+                    asynchronous operations in a node.js application.
+                    This used, at the time, an internal version of <code>async_hooks</code>,
+                    and the tool was instrumental in debugging the <code>async_hooks</code>
+                    implementation in Node.js.
+                </p>
+            </div>
+            <ul class="links">
+                <li><a href="https://dprof.js.org/">demo</a></li>
+                <li><a href="https://github.com/AndreasMadsen/dprof">code</a></li>
+            </ul>
         </article>
         <article>
-          <header>
-            <h2 class="name">Talk</h2>
-            <div class="title">Benchmarking with statistics in Node.js – NodeConf EU</div>
-            <div class="period">Oct 2016</div>
-          </header>
+            <header>
+                <h2 class="name">Talk</h2>
+                <div class="title">Benchmarking with statistics in Node.js – NodeConf EU</div>
+                <div class="period">Nov 2016</div>
+            </header>
+            <img class="smaller rounded" alt="benchmarking nodejs" src="img/2016-benchmarking-nodejs.png">
+            <div class="description">
+                <p>
+                    After having introduced statistics into the Node.JS open source project for their
+                    benchmarking suite, I was invited to speak at NodeConf EU in Ireland.
+                </p>
+                <p>
+                    The challenge was to communicate both how a Welch's t-test works to people that often
+                    dislike mathmatistics, and provide the psychological background of why statistics is
+                    necessary.
+                </p>
+            </div>
+            <ul class="links">
+                <li><a href="https://andreasmadsen.github.io/talk-benchmaking-nodejs-with-statistics/">slides</a></li>
+                <li><a href="https://www.youtube.com/watch?v=IPH4C9cHJLg&ab_channel=NearForm">video</a></li>
+            </ul>
         </article>
+        <!--
         <article>
           <header>
             <h2 class="name">Thesis</h2>
