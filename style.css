@@ -229,7 +229,7 @@ section.content.categorized h1 span {
 section.content.categorized header h2, .content.categorized header div {
     color: rgb(46, 135, 208);
     font-size: 11pt;
-    line-height: 11pt;
+    line-height: 1.25em;
     display: inline;
     margin: 0;
 }
