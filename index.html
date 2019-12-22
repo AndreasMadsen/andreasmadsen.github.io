@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Andreas Madsen Portfolio</title>
+  <meta name="description" content="Andreas Madsen – MSc. Machine Learning – Portfolio">
+  <meta name="author" content="Andreas Madsen">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab:300,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="top">
+        <h1>Andreas Madsen</h1>
+        <ul id="internal-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul id="external-links">
+            <li><a target="_blank" title="Twitter" href="https://twitter.com/andreas_madsen" class="external-twitter"></a></li>
+            <li><a target="_blank" title="Google Scholar" href="https://scholar.google.com/citations?hl=en&user=X0zwAXYAAAAJ" class="external-scholar"></a></li>
+            <li><a target="_blank" title="GitHub" href="https://github.com/AndreasMadsen" class="external-github"></a></li>
+            <li><a target="_blank" title="LinkedIn" href="https://linkedin.com/in/andreasmad" class="external-linkedin"></a></li>
+        </ul>
+    </header>
+
+    <section class="content" id="about">
+        <article id="name">
+            <img src="me.jpg" alt="Andreas Madsen - Profile Picture">
+            <header>
+              <h1 class="name">Andreas Madsen</h1>
+              <div class="title">Independent Researcher</div>
+              <div class="education">MSc Eng. – Machine Learning</div>
+            </header>
+        </article>
+        <article id="description">
+            <p>
+                I'm interested in developing interpretable machine learning models,
+                and methodology and mathematics for understanding existing models.
+            </p>
+            <p>
+                Recently <a href="https://openreview.net/forum?id=H1gNOeHKPS">published in CLR 2020</a>,
+                with spotlight. We develop new neural units for learning underlying symbolic arithmetic
+                equations, which are more interpretable than the usual neural approximations.
+            </p>
+            <p>
+                Also, check out my <a href="https://distill.pub/2019/memorization-in-rnns/">
+                Distill.pub publication</a> where I combine saliency maps and interactive JavaScript
+                to develop a general visualization method for NLP. – I was interviewed by
+                PractialAI about this.
+            <p>
+                In the past, I have made critical contributions to the JavaScript open-source
+                community. I have implemented large portions of <a href="https://clinicjs.org/">clinic.js</a>
+                that have become a de-facto profiling tool. I have helped developed multiple
+                node.js core modules and infrastructure, such as async_hooks, cluster, and
+                internal benchmarking.
+            </p>
+            <p>
+                I'm looking for a PhD or Research Engineer portion, so please reach out if
+                you like my work!
+            </p>
+        </article>
+    </section>
+
+    <section class="content categorized" id="portfolio">
+        <h1 class="section-title"><span>Portfolio</span></h1>
+        <article>
+            <header>
+                <h2 class="name">Publication</h2>
+                <div class="title">Neural Arithmetic Units – ICLR 2020</div>
+                <div class="period">Dec 2019</div>
+            </header>
+            <img alt="Neural Arithmetic Units" src="img/2019-nmu.png">
+            <div class="description">
+                <p>
+                    Proposes two new arithmetic units (addition and multiplication), that improves
+                    the state-of-the-art by 3x to 20x, over existing units such as the
+                    ``Neural Arithmetic Logic Unit'' (NALU). The improvements were achieved by
+                    rigorous theoretical analysis. The new units allow for more interpretable
+                    models and potentially perfect extrapolation.
+                </p>
+                <p>
+                    This received a spotlight at ICLR, as it was among the 5% best-reviewed publications.
+                </p>
+            </div>
+            <ul class="links">
+                <li><a href="https://openreview.net/forum?id=H1gNOeHKPS">paper</a></li>
+                <li><a href="https://github.com/AndreasMadsen/stable-nalu">code</a></li>
+            </ul>
+        </article>
+        <article>
+            <header>
+                <h2 class="name">Open Source</h2>
+                <div class="title">lrcurve - pip package</div>
+                <div class="period">Nov 2019</div>
+            </header>
+            <img alt="lrcurve" src="img/2019-lrcurve.gif">
+            <div class="description">
+                <p>
+                    Creates a learning-curve plot for Jupyter/Colab notebooks that is updated in real-time.
+                    This was first developed for a workshop at NodeConfEU, I later made it into its own
+                    pip package.
+                </p>
+            </div>
+            <ul class="links">
+                <li><a href="https://github.com/AndreasMadsen/python-lrcurve/">code</a></li>
+            </ul>
+        </article>
+        <article>
+            <header>
+                <h2 class="name">Product</h2>
+                <div class="title">AI smartwatch badge for NodeConf EU</div>
+                <div class="period">Nov 2019</div>
+            </header>
+            <img class="smaller rounded" alt="AI smartwatch for NodeConf EU" src="img/2019-watch.jpg">
+            <div class="description">
+                <p>
+                    Developed the hand-gesture recognition machine learning model for the IoT smartwatch badge,
+                    given out at NodeConfEU 2019. The model ran on a system-on-chip using TensorFlow Lite for
+                    Microprocessors. This was done in collaboration with the TensorFlow team.
+                </p>
+            </div>
+            <ul class="links">
+                <li><a href="https://www.nearform.com/blog/banglejs-excitement-at-nodeconf-eu/">blogpost</a></li>
+            </ul>
+        </article>
+        <article>
+            <header>
+                <h2 class="name">Publication</h2>
+                <div class="title">Measuring Arithmetic Extrapolation Performance – SEDL|NeurIPS 2019</div>
+                <div class="period">Oct 2019</div>
+            </header>
+            <img alt="Measuring Arithmetic Extrapolation Performance" src="img/2019-sedl.svg">
+            <div class="description">
+                <p>
+                    Proposes a new evaluation-criteria, with special confidence intervals, for
+                    extrapolation tasks. It uses these criteria in a reproduction study of
+                    the ``Neural Arithmetic Logic Unit'' (NALU).
+                </p>
+            </div>
+            <ul class="links">
+                <li><a href="https://arxiv.org/abs/1910.01888">paper</a></li>
+                <li><a href="https://github.com/AndreasMadsen/stable-nalu">code</a></li>
+                <li><a href="download/2019-sedl-poster.pdf">poster</a></li>
+            </ul>
+        </article>
+        <article>
+            <header>
+                <h2 class="name">Talk</h2>
+                <div class="title">Probability in TensorFlow.js – CopenhagenJS</div>
+                <div class="period">Aug 2019</div>
+            </header>
+            <img class="smaller rounded" alt="TensorFlow.js Special" src="img/2019-tfjs-special-talk.jpg">
+            <div class="description">
+                <p>
+                    Talked about my TensorFlow.js implementation of the special functions, and especially
+                    how to survive a really difficult programming project, with lots of unknowns.
+                </p>
+            </div>
+            <ul class="links">
+                <li><a href="https://andreasmadsen.github.io/talk-properbility-in-tfjs-ch1/">slides</a></li>
+                <li><a href="https://www.youtube.com/watch?v=VP8Sa7z7R5Y">video</a></li>
+            </ul>
+        </article>
+        <article>
+            <header>
+                <h2 class="name">Open Source</h2>
+                <div class="title">TensorFlow.js Special Functions</div>
+                <div class="period">Jul 2019</div>
+            </header>
+            <img class="smaller rounded" alt="TensorFlow.js Special" src="img/2019-tfjs-special.png">
+            <div class="description">
+                <p>
+                    Implementation for TensorFlow.js of the special functions used in probability, calculus,
+                    differential equations, and more. Such as the beta, gamma, zeta, and bessel functions.
+                </p>
+            </div>
+            <ul class="links">
+                <li><a href="https://github.com/AndreasMadsen/tfjs-special">code</a></li>
+            </ul>
+        </article>
+        <article>
+            <header>
+                <h2 class="name">Interview</h2>
+                <div class="title">Visualizing and understanding RNNs – PracticalAI</div>
+                <div class="period">Jun 2019</div>
+            </header>
+            <img alt="PracticalAI" src="img/2019-practical-ai.png" width="150px">
+            <div class="description">
+                <p>
+                    I was interviewed by PractialAI on my Distill publication that became highly
+                    acclaimed. I discuss the importance of interpretability and visualization.
+                </p>
+            </div>
+            <ul class="links">
+                <li><a href="https://changelog.com/practicalai/46">podcast</a></li>
+            </ul>
+        </article>
+        <article>
+            <header>
+                <h2 class="name">Publication</h2>
+                <div class="title">Visualizing memorization in RNNs – Distill.pub</div>
+                <div class="period">Mar 2019</div>
+            </header>
+            <img alt="Visualizing memorization in RNNs" src="img/2019-distill.jpg">
+            <div class="description">
+                <p>
+                    Proposes a visualization method for qualitatively comparing different RNN
+                    architectures' ability to memorize and understand what parts of an
+                    input-sentence make a prediction, which is great for interpretability.
+                </p>
+                <p>
+                    Distill is a peer-reviewed journal, chaired by Chris Olah from OpenAI,
+                    and other famous researchers.
+                </p>
+            </div>
+            <ul class="links">
+                <li><a href="https://distill.pub/2019/memorization-in-rnns/">paper</a></li>
+                <li><a href="https://github.com/distillpub/post--memorization-in-rnns">code</a></li>
+            </ul>
+        </article>
+        <article>
+            <header>
+                <h2 class="name">Open Source &amp; Product</h2>
+                <div class="title">Node.js Cephes library</div>
+                <div class="period">Sep 2018</div>
+            </header>
+            <img alt="Cephes" src="img/2018-cephes.png">
+            <div class="description">
+                <p>
+                    By compiling the <a href="https://www.netlib.org/cephes/">cephes</a> library to
+                    WebAssembly, this module allows JavaScript developers to use mathematical
+                    special functions.
+                </p>
+            </div>
+            <ul class="links">
+                <li><a href="https://www.nearform.com/blog/webassembly-cephes/">blogpost</a></li>
+                <li><a href="https://github.com/nearform/node-cephes">code</a></li>
+            </ul>
+        </article>
+        <article>
+            <header>
+                <h2 class="name">Open Source &amp; Product</h2>
+                <div class="title">TensorFlow.js Implementation of Hidden Markov Model</div>
+                <div class="period">Aug 2018</div>
+            </header>
+            <img class="smaller" alt="Cephes" src="img/2018-clinic-hmm.svg">
+            <div class="description">
+                <p>
+                    TensorFlow.js Implementation of Hidden Markov Model, that is now used filter background
+                    noise from V8 runtime in Node.js from general CPU usage signal, leaving just the
+                    main application CPU usage.
+                </p>
+            </div>
+            <ul class="links">
+                <li><a href="https://clinicjs.org/blog/clinic-doctor-just-got-more-advanced-with-tensorflow-js/">blogpost</a></li>
+                <li><a href="https://github.com/nearform/node-hidden-markov-model-tf">code</a></li>
+            </ul>
+        </article>
+        <article>
+            <header>
+                <h2 class="name">Open Source &amp; Product</h2>
+                <div class="title">Clinic.js Bubbleprof</div>
+                <div class="period">Jul 2018</div>
+            </header>
+            <video class="smaller" src="img/2018-clinic-bubbleprof.mp4" playsinline loop autoplay></video>
+            <div class="description">
+                <p>
+                    Implemented the collection runtime and analysis backend of Clinic.js Bubbleprof. The
+                    currently most advanced tool for profiling and debugging asynchronous delays in Node.js.
+                </p>
+            </div>
+            <ul class="links">
+                <li><a href="https://clinicjs.org/blog/introducing-bubbleprof/">blogpost</a></li>
+                <li><a href="https://github.com/nearform/node-clinic-bubbleprof">code</a></li>
+                <li><a href="https://www.youtube.com/watch?v=y7PZ4q5gk8o">talk by David Mark Clements</a></li>
+            </ul>
+        </article>
+        <article>
+            <header>
+                <h2 class="name">Open Source &amp; Product</h2>
+                <div class="title">First release of Clinic.js (Doctor)</div>
+                <div class="period">Jan 2018</div>
+            </header>
+            <video class="smaller" src="img/2018-clinic-doctor.mp4" playsinline loop autoplay></video>
+            <div class="description">
+                <p>
+                    Implemented the collection runtime, analysis backend, and frontend of Clinic.js Doctor.
+                    Clinic.js Doctor collects runtime usage data from the application runtime and uses
+                    machine learning and advanced non-parametric statistics to classify data into a
+                    recommendation for what tool to use next.
+                </p>
+                <p>I was later involved in hiring and managing the team that now maintains it.</p>
+            </div>
+            <ul class="links">
+                <li><a href="https://www.nearform.com/blog/introducing-node-clinic-a-performance-toolkit-for-node-js-developers/">blogpost</a></li>
+                <li><a href="https://github.com/nearform/node-clinic-doctor">code</a></li>
+                <li><a href="https://www.youtube.com/watch?v=y7PZ4q5gk8o">talk by David Mark Clements</a></li>
+            </ul>
+        </article>
+      <!--
+        <article>
+          <header>
+            <h2 class="name">Thesis</h2>
+            <div class="title">MSc. thesis</div>
+            <div class="period">Aug 2017</div>
+          </header>
+        </article>
+        <article>
+          <header>
+            <h2 class="name">Open Source</h2>
+            <div class="title">Node.js core - async_hooks</div>
+            <div class="period">May 2017</div>
+          </header>
+        </article>
+        <article>
+          <header>
+            <h2 class="name">Open Source</h2>
+            <div class="title">TensorFlow - sparsemax</div>
+            <div class="period">Feb 2017</div>
+          </header>
+        </article>
+        <article>
+          <header>
+            <h2 class="name">Open Source</h2>
+            <div class="title">Dprof</div>
+            <div class="period">Dec 2016</div>
+          </header>
+        </article>
+        <article>
+          <header>
+            <h2 class="name">Talk</h2>
+            <div class="title">Benchmarking with statistics in Node.js – NodeConf EU</div>
+            <div class="period">Oct 2016</div>
+          </header>
+        </article>
+        <article>
+          <header>
+            <h2 class="name">Thesis</h2>
+            <div class="title">BSc. thesis</div>
+            <div class="period">Aug 2015</div>
+          </header>
+        </article>
+        <article>
+          <header>
+            <h2 class="name">Open Source</h2>
+            <div class="title">Trace</div>
+            <div class="period">Mar 2014</div>
+          </header>
+        </article>
+        <article>
+          <header>
+            <h2 class="name">Open Source</h2>
+            <div class="title">Node.js core - cluster module</div>
+            <div class="period">Jun 2012</div>
+          </header>
+        </article>
+      -->
+    </section>
+</body>
+</html>
+
+<section class="content categorized" id="contact">
+  <h1 class="section-title"><span>Contact</span></h1>
+
+  <article>
+        <script>
+            (function () {
+                var a; document.write(
+                    '<p>Email: '+ (a = atob('YW13ZWJkaytwb3J0Zm9saW9AZ21haWwuY29t'), a.link('mailto:'+a)) + '</p>');
+            })();
+        </script>
+  </article>
+</section>
+
