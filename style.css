@@ -5,10 +5,20 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
+    page-break-after: avoid;
 }
 
 a {
     color: rgb(46, 135, 208);
+}
+
+p, ul {
+    page-break-before: avoid;
+    orphans: 100;
+}
+
+img {
+    page-break-inside: avoid;
 }
 
 header#top {
@@ -38,6 +48,12 @@ header#top {
     }
 
     header#top ul#internal-links {
+        display: none;
+    }
+}
+
+@media print {
+    header#top {
         display: none;
     }
 }
@@ -141,6 +157,13 @@ section.content {
     }
 }
 
+@media print {
+    section.content {
+        padding-top: 0px;
+        margin: 0px;
+    }
+}
+
 section.content#about {
     display: grid;
     grid-template-columns: 300px 1fr;
@@ -156,6 +179,13 @@ section.content#about {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
         grid-template-areas: "name" "description";
+    }
+}
+
+@media print {
+    section.content#about {
+        padding-top: 0px;
+        margin: 0px;
     }
 }
 
@@ -226,7 +256,12 @@ section.content.categorized h1 span {
     padding: 0px 10px;
 }
 
-section.content.categorized header h2, .content.categorized header div {
+section.content.categorized article {
+    page-break-inside: avoid;
+    orphans: 100;
+}
+
+section.content.categorized article header h2, .content.categorized header div {
     color: rgb(46, 135, 208);
     font-size: 11pt;
     line-height: 1.25em;
@@ -234,20 +269,20 @@ section.content.categorized header h2, .content.categorized header div {
     margin: 0;
 }
 
-section.content.categorized header .name {
+section.content.categorized article header .name {
     border-right: 1px solid rgb(46, 135, 208);
     padding-right: 5px;
     float: left;
 }
 
-section.content.categorized header .title {
+section.content.categorized article header .title {
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
     padding-left: 5px;
     float: left;
 }
 
-section.content.categorized header .period {
+section.content.categorized article header .period {
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
     padding-left: 5px;
@@ -273,6 +308,15 @@ section.content#portfolio article {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto;
         grid-template-areas: "title" "img" "description" "links";
+    }
+}
+
+@media print {
+    section.content#portfolio article {
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: "title title"
+                             "img description"
+                             "links links";
     }
 }
 
