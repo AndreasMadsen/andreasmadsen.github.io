@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,600|Roboto+Slab:300,400&display=swap" rel="stylesheet">
+  <script async src="portfolio-filter.js"></script>
 </head>
 <body>
     <header id="top">
@@ -53,7 +54,7 @@
                 <a href="https://distill.pub/2019/memorization-in-rnns/">Distill.pub</a>;
                 PractialAI interviewed me about this.
             <p>
-                In the past, I have made critical open-source contributions to JavaScript,
+                In the past, I have made critical open_source contributions to JavaScript,
                 such as implementing <a href="https://clinicjs.org/">clinic.js</a>,
                 that has become a de-facto profiling tool. I have
                 <a href="https://github.com/nodejs/node/commits?author=AndreasMadsen">helped developed
@@ -75,7 +76,7 @@
     <section class="content categorized" id="portfolio">
         <h1 class="section-title"><span>Portfolio</span></h1>
         <div id="filter"></div>
-        <article>
+        <article data-categories="publications">
             <header>
                 <h2 class="name">Publication</h2>
                 <div class="title">Neural Arithmetic Units – ICLR 2020</div>
@@ -99,7 +100,7 @@
                 <li><a href="https://github.com/AndreasMadsen/stable-nalu">code</a></li>
             </ul>
         </article>
-        <article>
+        <article data-categories="open_source">
             <header>
                 <h2 class="name">Open Source</h2>
                 <div class="title">lrcurve - pip package</div>
@@ -117,7 +118,7 @@
                 <li><a href="https://github.com/AndreasMadsen/python-lrcurve/">code</a></li>
             </ul>
         </article>
-        <article>
+        <article data-categories="products">
             <header>
                 <h2 class="name">Product</h2>
                 <div class="title">AI smartwatch badge for NodeConf EU</div>
@@ -135,7 +136,7 @@
                 <li><a href="https://www.nearform.com/blog/banglejs-excitement-at-nodeconf-eu/">blogpost</a></li>
             </ul>
         </article>
-        <article>
+        <article data-categories="publications">
             <header>
                 <h2 class="name">Publication</h2>
                 <div class="title">Measuring Arithmetic Extrapolation Performance – SEDL|NeurIPS 2019</div>
@@ -155,7 +156,7 @@
                 <li><a href="download/2019-sedl-poster.pdf">poster</a></li>
             </ul>
         </article>
-        <article>
+        <article data-categories="talks">
             <header>
                 <h2 class="name">Talk</h2>
                 <div class="title">Probability in TensorFlow.js – CopenhagenJS</div>
@@ -173,7 +174,7 @@
                 <li><a href="https://www.youtube.com/watch?v=VP8Sa7z7R5Y">video</a></li>
             </ul>
         </article>
-        <article>
+        <article data-categories="open_source">
             <header>
                 <h2 class="name">Open Source</h2>
                 <div class="title">TensorFlow.js Special Functions</div>
@@ -190,7 +191,7 @@
                 <li><a href="https://github.com/AndreasMadsen/tfjs-special">code</a></li>
             </ul>
         </article>
-        <article>
+        <article data-categories="talks">
             <header>
                 <h2 class="name">Interview</h2>
                 <div class="title">Visualizing and understanding RNNs – PracticalAI</div>
@@ -207,7 +208,7 @@
                 <li><a href="https://changelog.com/practicalai/46">podcast</a></li>
             </ul>
         </article>
-        <article>
+        <article data-categories="publications">
             <header>
                 <h2 class="name">Publication</h2>
                 <div class="title">Visualizing memorization in RNNs – Distill.pub</div>
@@ -230,7 +231,7 @@
                 <li><a href="https://github.com/distillpub/post--memorization-in-rnns">code</a></li>
             </ul>
         </article>
-        <article>
+        <article data-categories="open_source products">
             <header>
                 <h2 class="name">Open Source &amp; Product</h2>
                 <div class="title">Node.js Cephes library</div>
@@ -249,7 +250,7 @@
                 <li><a href="https://github.com/nearform/node-cephes">code</a></li>
             </ul>
         </article>
-        <article>
+        <article data-categories="open_source products">
             <header>
                 <h2 class="name">Open Source &amp; Product</h2>
                 <div class="title">TensorFlow.js Implementation of Hidden Markov Model</div>
@@ -268,7 +269,7 @@
                 <li><a href="https://github.com/nearform/node-hidden-markov-model-tf">code</a></li>
             </ul>
         </article>
-        <article>
+        <article data-categories="open_source products">
             <header>
                 <h2 class="name">Open Source &amp; Product</h2>
                 <div class="title">Clinic.js Bubbleprof</div>
@@ -287,7 +288,7 @@
                 <li><a href="https://www.youtube.com/watch?v=DOIpzLJ1oN8">talk by Matteo &amp; David</a></li>
             </ul>
         </article>
-        <article>
+        <article data-categories="open_source products">
             <header>
                 <h2 class="name">Open Source &amp; Product</h2>
                 <div class="title">First release of Clinic.js (Doctor)</div>
@@ -311,7 +312,7 @@
                 <li><a href="https://www.youtube.com/watch?v=DOIpzLJ1oN8">talk by Matteo &amp; David</a></li>
             </ul>
         </article>
-        <article>
+        <article data-categories="publications">
             <header>
                 <h2 class="name">MSc. Thesis</h2>
                 <div class="title">Semi-supervised neural machine translation</div>
@@ -331,7 +332,7 @@
                 <li><a href="https://github.com/AndreasMadsen/master-thesis/blob/master/presentation.pdf">slides</a></li>
             </ul>
         </article>
-        <article>
+        <article data-categories="open_source">
             <header>
                 <h2 class="name">Open Source</h2>
                 <div class="title">Node.js core - async_hooks</div>
@@ -349,7 +350,7 @@
                 <li><a href="https://github.com/nodejs/node/pull/12892">main pull request</a></li>
             </ul>
         </article>
-        <article>
+        <article data-categories="open_source">
             <header>
                 <h2 class="name">Open Source</h2>
                 <div class="title">Official TensorFlow implementation of sparsemax</div>
@@ -367,7 +368,7 @@
                 <li><a href="https://github.com/tensorflow/tensorflow/pull/6387">main pull request</a></li>
             </ul>
         </article>
-        <article>
+        <article data-categories="open_source">
             <header>
                 <h2 class="name">Open Source</h2>
                 <div class="title">Dprof, asynchronous I/O profiling tool</div>
@@ -388,7 +389,7 @@
                 <li><a href="https://github.com/AndreasMadsen/dprof">code</a></li>
             </ul>
         </article>
-        <article>
+        <article data-categories="talks">
             <header>
                 <h2 class="name">Talk</h2>
                 <div class="title">Benchmarking with statistics in Node.js – NodeConf EU</div>
@@ -435,19 +436,17 @@
         </article>
       -->
     </section>
+    <section class="content categorized" id="contact">
+        <h1 class="section-title"><span>Contact</span></h1>
+
+        <article>
+              <script>
+                  (function () {
+                      var a; document.write(
+                          '<p>Email: '+ (a = atob('YW13ZWJkaytwb3J0Zm9saW9AZ21haWwuY29t'), a.link('mailto:'+a)) + '</p>');
+                  })();
+              </script>
+        </article>
+      </section>
 </body>
 </html>
-
-<section class="content categorized" id="contact">
-  <h1 class="section-title"><span>Contact</span></h1>
-
-  <article>
-        <script>
-            (function () {
-                var a; document.write(
-                    '<p>Email: '+ (a = atob('YW13ZWJkaytwb3J0Zm9saW9AZ21haWwuY29t'), a.link('mailto:'+a)) + '</p>');
-            })();
-        </script>
-  </article>
-</section>
-
