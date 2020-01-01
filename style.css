@@ -374,8 +374,8 @@ section.content#portfolio #filter > ul > li {
     border: 2px solid #ddd;
     border-radius: 2em;
     font-size: 10pt;
+    cursor: pointer;
 }
-
 
 section.content#portfolio #filter > ul > li.filter-enabled {
     border-color: #555;
