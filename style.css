@@ -171,6 +171,49 @@ section.content article > div.description p:first-of-type {
     margin: 0;
 }
 
+section.content article > ul.mentions {
+    display: flexbox;
+    flex-wrap: wrap;
+
+    margin: 0;
+    padding: 0 0 0.25em 0;
+
+    list-style: none;
+    font-size: 10pt;
+}
+section.content article > ul.mentions::before {
+    content: 'Mentions:';
+    font-weight: 600;
+}
+section.content article > ul.mentions li {
+    display: inline;
+}
+section.content article > ul.mentions li::before {
+    content: ' • ';
+}
+section.content article > ul.mentions li:first-of-type::before {
+    content: '';
+}
+
+@media print {
+    section.content article > ul.mentions li::before {
+        content: '';
+    }
+    section.content article > ul.mentions li::after {
+        content: ' • ';
+    }
+    section.content article > ul.mentions li:last-of-type::after {
+        content: '';
+    }
+    section.content article > ul.mentions li a {
+        text-decoration: none;
+    }
+    section.content article > ul.mentions li a::after {
+        color: #555;
+        content: ' [' attr(href) ']';
+    }
+}
+
 section.content article > ul.links {
     display: flexbox;
     flex-wrap: wrap;
@@ -388,9 +431,11 @@ section.content#portfolio article {
 
     display: grid;
     grid-template-columns: 300px auto;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto auto auto 1fr auto;
     grid-template-areas: "img title"
                          "img description"
+                         "img mentions"
+                         "img margin"
                          "img links";
     grid-column-gap: 1em;
     grid-row-gap: 1em;
@@ -403,16 +448,17 @@ section.content#portfolio article.hidden {
 @media screen and (max-width: 660px) {
     section.content#portfolio article {
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas: "title" "img" "description" "links";
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "title" "img" "description" "mentions" "links";
     }
 }
 
 @media print {
     section.content#portfolio article {
-        grid-template-rows: auto 1fr auto;
+        grid-template-rows: auto auto auto auto;
         grid-template-areas: "title title"
                              "img description"
+                             "img mentions"
                              "links links";
     }
 }
@@ -447,4 +493,8 @@ section.content#portfolio article > div.description {
 
 section.content#portfolio article > ul.links {
     grid-area: links;
+}
+
+section.content#portfolio article > ul.mentions {
+    grid-area: mentions;
 }
