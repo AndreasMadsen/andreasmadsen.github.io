@@ -261,7 +261,8 @@ section.content#contact {
 section.content#about {
     display: grid;
     grid-template-columns: 300px 1fr;
-    grid-template-areas: "name description";
+    grid-template-areas: "name description"
+                         "name links";
     grid-column-gap: 1em;
     align-items: center;
     padding-top: 70px;
@@ -271,20 +272,25 @@ section.content#about {
 @media screen and (max-width: 660px) {
     section.content#about {
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: "name" "description";
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "name" "description" "links";
     }
 }
 
 @media print {
     section.content#about {
+        grid-template-columns: 200px 1fr;
+        grid-template-areas: "name description"
+                             "links links";
         padding-top: 0px;
         margin: 0px;
+        align-items: start;
     }
 }
 
 section.content article#name {
     grid-area: name;
+    padding: 1em 0;
 }
 
 section.content article#name img {
@@ -295,6 +301,13 @@ section.content article#name img {
 
     border-radius: 100px;
     border: 1px solid #000;
+}
+
+@media print {
+    section.content article#name img {
+        width: 130px;
+        height: 130px;
+    }
 }
 
 section.content article#name header {
@@ -323,6 +336,10 @@ section.content article#name header .education {
 
 section.content article#description {
     grid-area: description;
+}
+
+section.content article#links {
+    grid-area: links;
 }
 
 section.content.categorized h1 {
@@ -430,7 +447,7 @@ section.content#portfolio article {
     margin-bottom: 2em;
 
     display: grid;
-    grid-template-columns: 300px auto;
+    grid-template-columns: 300px 1fr;
     grid-template-rows: auto auto auto 1fr auto;
     grid-template-areas: "img title"
                          "img description"
@@ -455,10 +472,11 @@ section.content#portfolio article.hidden {
 
 @media print {
     section.content#portfolio article {
+        grid-template-columns: 200px 1fr;
         grid-template-rows: auto auto auto auto;
         grid-template-areas: "title title"
                              "img description"
-                             "img mentions"
+                             "mentions mentions"
                              "links links";
     }
 }
@@ -486,6 +504,20 @@ section.content#portfolio article > img.half, section.content#portfolio article 
     max-width: 150px;
 }
 
+@media print {
+    section.content#portfolio article > img, section.content#portfolio article > video {
+        align-self: start;
+        max-width: 200px;
+    }
+
+    section.content#portfolio article > img.smaller, section.content#portfolio article > video.smaller {
+        max-width: 180px;
+    }
+
+    section.content#portfolio article > img.half, section.content#portfolio article > video.half {
+        max-width: 100px;
+    }
+}
 
 section.content#portfolio article > div.description {
     grid-area: description;
