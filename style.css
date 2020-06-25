@@ -236,6 +236,7 @@ section.content article > ul.links {
 }
 section.content article > ul.links li {
     display: inline;
+    overflow: hidden;
 }
 section.content article > ul.links li::before {
     content: '[';
@@ -259,6 +260,7 @@ section.content article > ul.links li::after {
     }
     section.content article > ul.links li a {
         text-decoration: none;
+        white-space: nowrap; /* otherwise links breaks link in PDFs, which makes them the size of the outer container */
     }
     section.content article > ul.links li a::after {
         color: #555;
