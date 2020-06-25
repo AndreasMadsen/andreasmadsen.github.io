@@ -21,6 +21,12 @@ img {
     page-break-inside: avoid;
 }
 
+@media print {
+    p {
+        font-size: 10pt;
+    }
+}
+
 header#top {
     top: 0px;
     height: 60px;
@@ -196,6 +202,9 @@ section.content article > ul.mentions li:first-of-type::before {
 }
 
 @media print {
+    section.content article > ul.mentions {
+        font-size: 10pt;
+    }
     section.content article > ul.mentions li::before {
         content: '';
     }
@@ -236,6 +245,9 @@ section.content article > ul.links li::after {
 }
 
 @media print {
+    section.content article > ul.links {
+        font-size: 8pt;
+    }
     section.content article > ul.links li::before {
         content: '';
     }
@@ -256,6 +268,12 @@ section.content article > ul.links li::after {
 
 section.content#contact {
     margin-bottom: 5em;
+}
+
+@media print {
+    html.export section.content#contact {
+        display: none;
+    }
 }
 
 section.content#about {
@@ -291,6 +309,12 @@ section.content#about {
 section.content article#name {
     grid-area: name;
     padding: 1em 0;
+}
+
+@media print {
+    html.export section.content#about {
+        display: none;
+    }
 }
 
 section.content article#name img {
@@ -456,6 +480,12 @@ section.content#portfolio article {
                          "img links";
     grid-column-gap: 1em;
     grid-row-gap: 1em;
+}
+
+@media print {
+    html.export section.content#portfolio article:not([data-categories*="highlights"]) {
+        display: none;
+    }
 }
 
 section.content#portfolio article.hidden {

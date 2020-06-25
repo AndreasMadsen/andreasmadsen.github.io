@@ -11,6 +11,11 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,600|Roboto+Slab:300,400&display=swap" rel="stylesheet">
   <script async src="portfolio-filter.js"></script>
+  <script>
+    if(window.location.hash.includes('export')) {
+        document.documentElement.classList.add('export');
+    }
+  </script>
 </head>
 <body>
     <header id="top">
@@ -267,7 +272,7 @@
                 </p>
             </div>
             <ul class="mentions">
-                <li><a href="https://changelog.com/practicalai/46">Interview by PractialAI</a></li>
+                <li><a href="https://changelog.com/practicalai/46">Interview by PracticalAI</a></li>
                 <li><a href="https://youtu.be/iKrrKyeSRew">Video by Two Minute Papers</a></li>
             </ul>
             <ul class="links">
@@ -394,7 +399,7 @@
             <div class="description">
                 <p>
                     I was a critical part of getting the <code>async_hooks</code> module implemented in the Node.js core runtime.
-                    This module allows users to monitor all asynchronous operations happing in the application.
+                    This module allows users to monitor all asynchronous operations happening in the application.
                 </p>
             </div>
             <ul class="links">
