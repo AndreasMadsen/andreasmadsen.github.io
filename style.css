@@ -523,7 +523,9 @@ section.content#portfolio article > img, section.content#portfolio article > vid
     grid-area: img;
     justify-self: center;
     align-self: center;
-    max-width: 300px;
+    width: 300px;
+    object-fit: contain;
+    height: auto;
 }
 
 section.content#portfolio article > img.rounded {
@@ -531,25 +533,25 @@ section.content#portfolio article > img.rounded {
 }
 
 section.content#portfolio article > img.smaller, section.content#portfolio article > video.smaller {
-    max-width: 270px;
+    width: 270px;
 }
 
 section.content#portfolio article > img.half, section.content#portfolio article > video.half {
-    max-width: 150px;
+    width: 150px;
 }
 
 @media print {
     section.content#portfolio article > img, section.content#portfolio article > video {
         align-self: start;
-        max-width: 200px;
+        width: 200px;
     }
 
     section.content#portfolio article > img.smaller, section.content#portfolio article > video.smaller {
-        max-width: 180px;
+        width: 180px;
     }
 
     section.content#portfolio article > img.half, section.content#portfolio article > video.half {
-        max-width: 100px;
+        width: 100px;
     }
 }
 
