@@ -1,61 +1,157 @@
 ;(function () {
     if (document.readyState == "complete" || document.readyState == "loaded" || document.readyState == "interactive") {
-        ready();
+        setTimeout(ready, 0);
     } else {
         window.addEventListener('DOMContentLoaded', ready);
     }
 
+    class PortfolioItem {
+        constructor(element) {
+            this.element = element;
+            this.hidden = false;
+            this.categories = new Set(element.dataset.categories.split(' '));
+        }
+
+        hasCategoryEnabled(categories) {
+            let enabled = false;
+            for (const category of this.categories.values()) {
+                enabled = enabled || categories.get(category).enabled;
+            }
+            return enabled;
+        }
+
+        setHidden(hidden) {
+            this.hidden = hidden;
+        }
+
+        draw() {
+            this.element.classList.toggle('hidden', !this.hidden);
+        }
+    }
+
+    class PortfolioCategory {
+        constructor(name, onclick) {
+            this.name = name;
+            this.enabled = false;
+
+            this.element = document.createElement('li');
+            this.element.append(name.replace('_', ' '));
+            this.element.addEventListener('click', () => onclick(this));
+        }
+
+        setEnabled(enabled) {
+            this.enabled = enabled;
+        }
+
+        toggle() {
+            this.enabled = !this.enabled;
+        }
+
+        draw() {
+            this.element.classList.toggle('filter-enabled', this.enabled);
+        }
+    }
+
+    class ProtofolioFilter {
+        constructor() {
+            this.categories = new Map();
+            this.items = [];
+        }
+
+        loadItems(elements) {
+            for (const element of elements) {
+                this.items.push(new PortfolioItem(element));
+            }
+
+            for (const item of this.items) {
+                for (const category of item.categories) {
+                    if (!this.categories.has(category)) {
+                        this.categories.set(category, new PortfolioCategory(category, this.onCategorySelected.bind(this)));
+                    }
+                }
+            }
+        }
+
+        initButtons() {
+            // Create dynamic content
+            const ul = document.createElement('ul');
+
+            const categories = Array.from(this.categories.values())
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .map((a) => a.element);
+
+            ul.append.apply(ul, categories);
+            document.getElementById('filter').append(ul);
+        }
+
+        onCategorySelected(category) {
+            category.toggle();
+            this.updateLocationHash();
+            this.updateItemState();
+            this.draw();
+        }
+
+        updateLocationHash() {
+            const enabledCategories = Array.from(this.categories.values())
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .filter((a) => a.enabled)
+            .map((a) => a.name);
+
+            window.history.replaceState(null,null,'#!/' + enabledCategories.join('/'));
+        }
+
+        updateItemState() {
+            // If no category is enabled, show all
+            let anyEnabled = false;
+            for (const category of this.categories.values()) {
+                anyEnabled = anyEnabled || category.enabled;
+            }
+            for (const item of this.items) {
+                item.setHidden(!anyEnabled || item.hasCategoryEnabled(this.categories));
+            }
+        }
+
+        stateFromHash(hash) {
+            const enabledCategories = new Set();
+            if (hash.slice(0, 2) == '#!') {
+                for(const category of hash.split('/').slice(1).filter((category) => this.categories.has(category))) {
+                    enabledCategories.add(category);
+                }
+            }
+
+            for (const category of this.categories.values()) {
+                category.setEnabled(enabledCategories.has(category.name));
+            }
+
+            this.updateItemState();
+        }
+
+        draw() {
+            for (const category of this.categories.values()) {
+                category.draw();
+            }
+            for (const item of this.items) {
+                item.draw();
+            }
+        }
+    }
+
     function ready() {
-        // make a index of portfolio-items by the category
-        const categoryState = new Map();
-        const portfolioItems = Array.from(document.querySelectorAll('#portfolio article'));
-        for (const item of portfolioItems) {
-            for (const category of item.dataset.categories.split(' ')) {
-                if (!categoryState.has(category)) {
-                    categoryState.set(category, {
-                        enabled: false,
-                        button: null
-                    });
-                }
-            }
-        }
+        const filter = new ProtofolioFilter();
+        filter.loadItems(document.querySelectorAll('#portfolio article'));
+        filter.initButtons();
+        filter.stateFromHash(window.location.hash);
+        filter.draw();
 
-        // Create dynamic content
-        const content = document.createDocumentFragment();
+        window.addEventListener('hashchange', function () {
+            filter.stateFromHash(window.location.hash);
+            filter.draw();
 
-        const ul = document.createElement('ul');
-        for (const category of Array.from(categoryState.keys()).sort()) {
-            const li = document.createElement('li');
-            li.appendChild(document.createTextNode(category.replace('_', ' ')));
-            li.addEventListener('click', function () {
-                categoryState.get(category).enabled = !categoryState.get(category).enabled;
-                update();
-            });
-            categoryState.get(category).button = li;
-            ul.appendChild(li);
-        }
-        content.appendChild(ul);
+            // Hack to not include the profile description and contact in print
+            document.documentElement.classList.toggle('no-profile', window.location.hash.includes('/no-profile/'));
+        });
 
-        document.getElementById('filter').appendChild(content);
-
-        // Handle clicking on filter
-        function update() {
-            // Toggle filter buttons
-            let enabledCategories = new Set();
-            for (const [name, { enabled, button }] of categoryState.entries()) {
-                if (enabled) enabledCategories.add(name);
-                button.classList.toggle('filter-enabled', enabled);
-            }
-
-            // Hide items that are filtered out
-            for (const item of portfolioItems) {
-                let showItem = enabledCategories.size === 0;
-                for (const category of item.dataset.categories.split(' ')) {
-                    if (enabledCategories.has(category)) showItem = true;
-                }
-
-                item.classList.toggle('hidden', !showItem);
-            }
-        }
+        // Hack to not include the profile description and contact in print
+        document.documentElement.classList.toggle('no-profile', window.location.hash.includes('/no-profile/'));
     }
 })();

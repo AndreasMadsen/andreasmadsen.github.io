@@ -275,7 +275,7 @@ section.content#contact {
 }
 
 @media print {
-    html.export section.content#contact {
+    html.no-profile section.content#contact {
         display: none;
     }
 }
@@ -316,7 +316,7 @@ section.content article#name {
 }
 
 @media print {
-    html.export section.content#about {
+    html.no-profile section.content#about {
         display: none;
     }
 }
@@ -484,12 +484,6 @@ section.content#portfolio article {
                          "img links";
     grid-column-gap: 1em;
     grid-row-gap: 1em;
-}
-
-@media print {
-    html.export section.content#portfolio article:not([data-categories*="highlights"]) {
-        display: none;
-    }
 }
 
 section.content#portfolio article.hidden {
