@@ -400,33 +400,35 @@ section.content.categorized article {
     orphans: 100;
 }
 
+section.content.categorized article header {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    gap: 5px;
+}
+
 section.content.categorized article header h2, .content.categorized header div {
     color: rgb(46, 135, 208);
     font-size: 11pt;
     line-height: 1.25em;
-    display: inline;
     margin: 0;
 }
 
 section.content.categorized article header .name {
     border-right: 1px solid rgb(46, 135, 208);
     padding-right: 5px;
-    float: left;
 }
 
 section.content.categorized article header .title {
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
-    padding-left: 5px;
-    float: left;
 }
 
 section.content.categorized article header .period {
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
-    padding-left: 5px;
     text-transform: uppercase;
-    float: right;
+    text-align: right;
+    min-width: 37px;
 }
 
 section.content#portfolio #filter {
@@ -483,7 +485,6 @@ section.content#portfolio article {
                          "img margin"
                          "img links";
     grid-column-gap: 1em;
-    grid-row-gap: 1em;
 }
 
 section.content#portfolio article.hidden {
@@ -511,6 +512,7 @@ section.content#portfolio article.hidden {
 
 section.content#portfolio article > header {
     grid-area: title;
+    margin-bottom: 1em;
 }
 
 section.content#portfolio article > img, section.content#portfolio article > video {
@@ -551,12 +553,13 @@ section.content#portfolio article > img.half, section.content#portfolio article 
 
 section.content#portfolio article > div.description {
     grid-area: description;
-}
-
-section.content#portfolio article > ul.links {
-    grid-area: links;
+    margin-bottom: 1em;
 }
 
 section.content#portfolio article > ul.mentions {
     grid-area: mentions;
+    margin-bottom: 1em;
+}
+section.content#portfolio article > ul.links {
+    grid-area: links;
 }
