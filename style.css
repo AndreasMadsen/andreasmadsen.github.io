@@ -403,7 +403,17 @@ section.content.categorized article {
 section.content.categorized article header {
     display: grid;
     grid-template-columns: auto auto 1fr;
+    grid-template-areas: "name title period";
     gap: 5px;
+}
+
+@media screen and (max-width: 660px) {
+    section.content.categorized article header {
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "name title"
+                             "name period";
+    }
 }
 
 section.content.categorized article header h2, .content.categorized header div {
@@ -414,16 +424,22 @@ section.content.categorized article header h2, .content.categorized header div {
 }
 
 section.content.categorized article header .name {
+    grid-area: name;
+
     border-right: 1px solid rgb(46, 135, 208);
     padding-right: 5px;
 }
 
 section.content.categorized article header .title {
+    grid-area: title;
+
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
 }
 
 section.content.categorized article header .period {
+    grid-area: period;
+
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
     text-transform: uppercase;
