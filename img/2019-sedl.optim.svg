@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="113.95mm" height="42.602mm" version="1.1" viewBox="0 0 113.95 42.602" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker id="c" overflow="visible" orient="auto">
+   <path transform="scale(-.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="#666" fill-rule="evenodd" stroke="#666" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="a" overflow="visible" orient="auto">
+   <path transform="scale(-.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="#666" fill-rule="evenodd" stroke="#666" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="b" overflow="visible" orient="auto">
+   <path transform="scale(-.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="#666" fill-rule="evenodd" stroke="#666" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+ </defs>
+ <g transform="translate(-11.103 -26.493)">
+  <g fill="none">
+   <g transform="matrix(.26458 0 0 -.26458 21.681 126.38)" stroke="#e9e9e9" data-name="&lt;Group&gt;">
+    <path d="m99.352 346.96c49.335-2e-5 186.32 4e-5 235.66-1e-5 5.5404 0 10.001-4.4603 10.001-10.001m0-13.821v-7.5536" fill="none" marker-end="url(#c)" stroke="#666" stroke-width="1.3795"/>
+   </g>
+   <g transform="matrix(.26458 0 0 .26458 50.256 -30.359)" stroke="#e9e9e9" data-name="&lt;Group&gt;">
+    <path d="m85.352 346.96c49.335-2e-5 92.292 4e-5 141.63-1e-5 5.5404 0 10.001-4.4603 10.001-10.001v-3.8436m0-11.844v-7.6871" fill="none" marker-end="url(#b)" stroke="#666" stroke-width="1.3795"/>
+   </g>
+   <g stroke="#666" stroke-width=".365">
+    <path d="m87.856 49.72v6.7088"/>
+    <path d="m82.152 49.72v6.7088"/>
+    <path d="m76.449 49.72v6.7088"/>
+    <path d="m70.745 49.72v12"/>
+    <path d="m53.634 49.72v6.7088"/>
+    <path d="m59.337 49.72v6.7088"/>
+    <path d="m65.041 49.72v6.7088"/>
+   </g>
+   <path d="m93.41 50.049v3.6675c0 1.4659-1.1801 2.646-2.646 2.646h-40.154c-1.4659 0-2.646-1.1801-2.646-2.646v-3.3678" opacity=".974" stroke="#656565" stroke-width=".365"/>
+  </g>
+  <g transform="matrix(1 0 0 -1 17.233 227.39)">
+   <circle cx="53.454" cy="165.95" r="3.2" fill="#f0f0f5" stroke="#f0f0f5" stroke-width=".356"/>
+   <circle cx="53.454" cy="165.95" r="2.822" fill="#e0cef5" stroke="#666" stroke-width=".356"/>
+   <g transform="translate(5.749 .71433)" fill="none" stroke="#666" stroke-width=".365">
+    <path d="m46.633 165.24h2.1435"/>
+    <path d="m47.705 164.16v2.1435"/>
+   </g>
+  </g>
+  <g fill="none" stroke-width=".365">
+   <g stroke="#666">
+    <path d="m65.085 46.299v-6.7088"/>
+    <path d="m59.382 46.299v-6.7088"/>
+    <path d="m53.678 46.299v-6.7088"/>
+    <path d="m47.974 46.299v-9.3546"/>
+    <path d="m42.27 46.299v-6.7088"/>
+    <path d="m30.863 46.299v-6.7088"/>
+    <path d="m36.566 46.299v-6.7088"/>
+   </g>
+   <path d="m70.727 45.97v-3.6675c0-1.4659-1.1801-2.646-2.646-2.646h-40.454c-1.4659 0-2.646 1.1801-2.646 2.646v3.3678" opacity=".974" stroke="#656565"/>
+  </g>
+  <g transform="translate(-5.5999 -131.37)">
+   <circle cx="53.454" cy="165.95" r="3.2" fill="#f0f0f5" stroke="#f0f0f5" stroke-width=".356"/>
+   <circle cx="53.454" cy="165.95" r="2.822" fill="#e0cef5" stroke="#666" stroke-width=".356"/>
+   <g transform="translate(5.749 .71433)" fill="none" stroke="#666" stroke-width=".365">
+    <path d="m46.633 165.24h2.1435"/>
+    <path d="m47.705 164.16v2.1435"/>
+   </g>
+  </g>
+  <g transform="matrix(.26458 0 0 .26458 36.838 -69.62)" stroke="#e9e9e9" data-name="&lt;Group&gt;">
+   <rect x="-77.324" y="432.55" width="21.558" height="22.206" rx="0" ry="0" fill="#f0f0f5" stroke="#e9e9e9" stroke-width="1.3795"/>
+  </g>
+  <g fill="none">
+   <path d="m113.04 47.768h8.6456" marker-end="url(#a)" opacity=".974" stroke="#666" stroke-width=".365"/>
+  </g>
+  <g stroke="#e9e9e9">
+   <g transform="matrix(.26458 0 0 .26458 42.542 -69.62)" data-name="&lt;Group&gt;">
+    <rect x="-77.324" y="432.55" width="21.558" height="22.206" rx="0" ry="0" fill="#f0f0f5" stroke="#e9e9e9" stroke-width="1.3795"/>
+   </g>
+   <g transform="matrix(.26458 0 0 .26458 48.245 -69.62)" data-name="&lt;Group&gt;">
+    <rect x="-77.324" y="432.55" width="21.558" height="22.206" rx="0" ry="0" fill="#f0f0f5" stroke="#e9e9e9" stroke-width="1.3795"/>
+   </g>
+   <g transform="matrix(.26458 0 0 .26458 53.949 -69.62)" data-name="&lt;Group&gt;">
+    <rect x="-77.324" y="432.55" width="21.558" height="22.206" rx="0" ry="0" fill="#f0f0f5" stroke="#e9e9e9" stroke-width="1.3795"/>
+   </g>
+   <g transform="matrix(.26458 0 0 .26458 59.653 -69.62)" data-name="&lt;Group&gt;">
+    <rect x="-77.324" y="432.55" width="21.558" height="22.206" rx="0" ry="0" fill="#f0f0f5" stroke="#e9e9e9" stroke-width="1.3795"/>
+   </g>
+   <g transform="matrix(.26458 0 0 .26458 65.357 -69.62)" data-name="&lt;Group&gt;">
+    <rect x="-77.324" y="432.55" width="21.558" height="22.206" rx="0" ry="0" fill="#f0f0f5" stroke="#e9e9e9" stroke-width="1.3795"/>
+   </g>
+   <g transform="matrix(.26458 0 0 .26458 71.061 -69.62)" data-name="&lt;Group&gt;">
+    <rect x="-77.324" y="432.55" width="21.558" height="22.206" rx="0" ry="0" fill="#f0f0f5" stroke="#e9e9e9" stroke-width="1.3795"/>
+   </g>
+   <g transform="matrix(.26458 0 0 .26458 76.764 -69.62)" data-name="&lt;Group&gt;">
+    <rect x="-77.324" y="432.55" width="21.558" height="22.206" rx="0" ry="0" fill="#f0f0f5" stroke="#e9e9e9" stroke-width="1.3795"/>
+   </g>
+   <g transform="matrix(.26458 0 0 .26458 59.653 -69.62)" data-name="&lt;Group&gt;">
+    <rect x="-77.324" y="432.55" width="21.558" height="22.206" rx="0" ry="0" fill="#f0f0f5" stroke="#e9e9e9" stroke-width="1.3795"/>
+   </g>
+   <g transform="matrix(.26458 0 0 .26458 65.357 -69.62)" data-name="&lt;Group&gt;">
+    <rect x="-77.324" y="432.55" width="21.558" height="22.206" rx="0" ry="0" fill="#f0f0f5" stroke="#e9e9e9" stroke-width="1.3795"/>
+   </g>
+   <g transform="matrix(.26458 0 0 .26458 71.061 -69.62)" data-name="&lt;Group&gt;">
+    <rect x="-77.324" y="432.55" width="21.558" height="22.206" rx="0" ry="0" fill="#f0f0f5" stroke="#e9e9e9" stroke-width="1.3795"/>
+   </g>
+   <g transform="matrix(.26458 0 0 .26458 76.764 -69.62)" data-name="&lt;Group&gt;">
+    <rect x="-77.324" y="432.55" width="21.558" height="22.206" rx="0" ry="0" fill="#f0f0f5" stroke="#e9e9e9" stroke-width="1.3795"/>
+   </g>
+   <g transform="matrix(.26458 0 0 .26458 82.468 -69.62)" data-name="&lt;Group&gt;">
+    <rect x="-77.324" y="432.55" width="21.558" height="22.206" rx="0" ry="0" fill="#f0f0f5" stroke="#e9e9e9" stroke-width="1.3795"/>
+   </g>
+   <g transform="matrix(.26458 0 0 .26458 93.876 -69.62)" data-name="&lt;Group&gt;">
+    <rect x="-77.324" y="432.55" width="21.558" height="22.206" rx="0" ry="0" fill="#f0f0f5" stroke="#e9e9e9" stroke-width="1.3795"/>
+   </g>
+   <g transform="matrix(.26458 0 0 .26458 99.58 -69.62)" data-name="&lt;Group&gt;">
+    <rect x="-77.324" y="432.55" width="21.558" height="22.206" rx="0" ry="0" fill="#f0f0f5" stroke="#e9e9e9" stroke-width="1.3795"/>
+   </g>
+   <g transform="matrix(.26458 0 0 .26458 105.28 -69.62)" data-name="&lt;Group&gt;">
+    <rect x="-77.324" y="432.55" width="21.558" height="22.206" rx="0" ry="0" fill="#f0f0f5" stroke="#e9e9e9" stroke-width="1.3795"/>
+   </g>
+   <g transform="matrix(.26458 0 0 .26458 110.99 -69.62)" data-name="&lt;Group&gt;">
+    <rect x="-77.324" y="432.55" width="21.558" height="22.206" rx="0" ry="0" fill="#f0f0f5" stroke="#e9e9e9" stroke-width="1.3795"/>
+   </g>
+   <g transform="matrix(.26458 0 0 .26458 116.69 -69.62)" data-name="&lt;Group&gt;">
+    <rect x="-77.324" y="432.55" width="21.558" height="22.206" rx="0" ry="0" fill="#f0f0f5" stroke="#e9e9e9" stroke-width="1.3795"/>
+   </g>
+   <g transform="matrix(.26458 0 0 .26458 122.39 -69.62)" data-name="&lt;Group&gt;">
+    <rect x="-77.324" y="432.55" width="21.558" height="22.206" rx="0" ry="0" fill="#f0f0f5" stroke="#e9e9e9" stroke-width="1.3795"/>
+   </g>
+  </g>
+  <g transform="translate(59.404 -125.59)">
+   <circle cx="53.454" cy="173.36" r="3.2" fill="#f0f0f5" stroke="#f0f0f5" stroke-width=".356"/>
+   <circle cx="53.454" cy="173.36" r="2.822" fill="#e0cef5" stroke="#666" stroke-width=".356"/>
+   <circle cx="53.454" cy="173.36" r=".6" fill="#666"/>
+  </g>
+  <g fill="#666" font-family="sans-serif" font-size="4.2333px" letter-spacing="0px" stroke-width=".26458px" word-spacing="0px">
+   <text x="111.7388" y="57.025299" style="line-height:125%" xml:space="preserve"><tspan x="111.7388" y="57.025299" fill="#666666" font-family="'Latin Modern Roman'" stroke-width=".26458px">a</tspan></text>
+   <text x="111.73909" y="40.333298" style="line-height:125%" xml:space="preserve"><tspan x="111.73909" y="40.333298" fill="#666666" font-family="'Latin Modern Roman'" stroke-width=".26458px">b</tspan></text>
+   <text x="122.64809" y="49.042706" style="line-height:125%" xml:space="preserve"><tspan x="122.64809" y="49.042706" fill="#666666" font-family="'Latin Modern Roman'" stroke-width=".26458px">t</tspan></text>
+   <text x="12.052224" y="48.676521" style="line-height:125%" xml:space="preserve"><tspan x="12.052224" y="48.676521" fill="#666666" font-family="'Latin Modern Roman'" stroke-width=".26458px">x:</tspan></text>
+  </g>
+  <g transform="matrix(.26458 0 0 .26458 88.172 -69.62)" stroke="#e9e9e9" data-name="&lt;Group&gt;">
+   <rect x="-77.324" y="432.55" width="21.558" height="22.206" rx="0" ry="0" fill="#f0f0f5" stroke="#e9e9e9" stroke-width="1.3795"/>
+  </g>
+  <g transform="translate(-5.4919)">
+   <g fill="none" stroke="#666" stroke-width=".365">
+    <path d="m76.22 46.791v1.9463"/>
+    <path d="m53.454 46.791v1.9463"/>
+    <path d="m53.531 47.764h4.0835m14.517 0h4.0835"/>
+   </g>
+   <text x="58.048843" y="48.822571" fill="#666666" font-family="sans-serif" font-size="4.2333px" letter-spacing="0px" stroke-width=".26458px" word-spacing="0px" style="line-height:125%" xml:space="preserve"><tspan x="58.048843" y="48.822571" fill="#666666" font-family="'Latin Modern Roman Slanted'" stroke-width=".26458px">overlap</tspan></text>
+  </g>
+  <g transform="translate(.10009 -18.392)">
+   <g fill="none" stroke="#666" stroke-width=".365">
+    <path d="m70.628 46.791v1.9463"/>
+    <path d="m24.879 46.791v1.9463"/>
+    <path d="m24.956 47.764h16.254m12.63 0h16.783"/>
+   </g>
+   <text x="41.844494" y="48.822571" fill="#666666" font-family="sans-serif" font-size="4.2333px" letter-spacing="0px" stroke-width=".26458px" word-spacing="0px" style="line-height:125%" xml:space="preserve"><tspan x="41.844494" y="48.822571" fill="#666666" font-family="'Latin Modern Roman Slanted'" stroke-width=".26458px">subset</tspan></text>
+  </g>
+  <g transform="translate(23.144 19.226)">
+   <g fill="none" stroke="#666" stroke-width=".365">
+    <path d="m70.628 46.791v1.9463"/>
+    <path d="m24.879 46.791v1.9463"/>
+    <path d="m24.956 47.764h16.254m12.63 0h16.783"/>
+   </g>
+   <text x="41.844494" y="48.822571" fill="#666666" font-family="sans-serif" font-size="4.2333px" letter-spacing="0px" stroke-width=".26458px" word-spacing="0px" style="line-height:125%" xml:space="preserve"><tspan x="41.844494" y="48.822571" fill="#666666" font-family="'Latin Modern Roman Slanted'" stroke-width=".26458px">subset</tspan></text>
+  </g>
+ </g>
+</svg>

@@ -532,38 +532,42 @@ section.content#portfolio article > header {
     margin-bottom: 1em;
 }
 
-section.content#portfolio article > img, section.content#portfolio article > video {
+section.content#portfolio article > picture, section.content#portfolio article > img, section.content#portfolio article > video {
     grid-area: img;
     justify-self: center;
     align-self: center;
+}
+
+section.content#portfolio article img, section.content#portfolio article > video {
     width: 300px;
     object-fit: contain;
     height: auto;
 }
 
-section.content#portfolio article > img.rounded {
+
+section.content#portfolio article img.rounded, section.content#portfolio article > video.rounded {
     border-radius: 40px;
 }
 
-section.content#portfolio article > img.smaller, section.content#portfolio article > video.smaller {
+section.content#portfolio article img.smaller, section.content#portfolio article > video.smaller {
     width: 270px;
 }
 
-section.content#portfolio article > img.half, section.content#portfolio article > video.half {
+section.content#portfolio article img.half, section.content#portfolio article > video.half {
     width: 150px;
 }
 
 @media print {
-    section.content#portfolio article > img, section.content#portfolio article > video {
+    section.content#portfolio article img, section.content#portfolio article > video {
         align-self: start;
         width: 200px;
     }
 
-    section.content#portfolio article > img.smaller, section.content#portfolio article > video.smaller {
+    section.content#portfolio article img.smaller, section.content#portfolio article > video.smaller {
         width: 180px;
     }
 
-    section.content#portfolio article > img.half, section.content#portfolio article > video.half {
+    section.content#portfolio article img.half, section.content#portfolio article > video.half {
         width: 100px;
     }
 }
