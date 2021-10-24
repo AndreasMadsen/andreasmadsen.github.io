@@ -285,7 +285,7 @@ section.content#about {
     grid-template-columns: 300px 1fr;
     grid-template-areas: "name description"
                          "name links";
-    grid-column-gap: 1em;
+    grid-column-gap: 10px;
     align-items: center;
     padding-top: 70px;
     margin-top: -30px;
@@ -402,7 +402,7 @@ section.content.categorized article {
 
 section.content.categorized article header {
     display: grid;
-    grid-template-columns: auto auto 1fr;
+    grid-template-columns: 310px auto 1fr;
     grid-template-areas: "name title period";
     gap: 5px;
 }
@@ -428,6 +428,7 @@ section.content.categorized article header .name {
 
     border-right: 1px solid rgb(46, 135, 208);
     padding-right: 5px;
+    text-align: right;
 }
 
 section.content.categorized article header .title {
@@ -495,12 +496,12 @@ section.content#portfolio article {
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-rows: auto auto auto 1fr auto;
-    grid-template-areas: "img title"
+    grid-template-areas: "title title"
                          "img description"
                          "img mentions"
                          "img margin"
                          "img links";
-    grid-column-gap: 1em;
+    grid-column-gap: 10px;
 }
 
 section.content#portfolio article.hidden {
