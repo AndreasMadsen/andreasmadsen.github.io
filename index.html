@@ -69,7 +69,11 @@
 
     <section class="content" id="about">
         <article id="name">
-            <img src="me.jpg" alt="Andreas Madsen - Profile Picture" width="400" height="400" loading="auto">
+            <picture>
+                <source srcset="me.webp" type="image/webp">
+                <source srcset="me.jpg" type="image/jpeg">
+                <img class="smaller rounded" lt="Andreas Madsen - Profile Picture" src="me.jpg" width="400" height="400" loading="auto">
+            </picture>
             <header>
               <h1 class="name">Andreas Madsen</h1>
               <div class="title">PhD student at Mila</div>
@@ -336,7 +340,11 @@
                 <div class="title">AI smartwatch badge for NodeConf EU - NearForm Research</div>
                 <div class="period">Nov 2019</div>
             </header>
-            <img class="smaller rounded" alt="AI smartwatch for NodeConf EU" src="img/2019-watch.jpg" width="1600" height="1066" loading="lazy">
+            <picture>
+                <source srcset="img/2019-watch.webp" type="image/webp">
+                <source srcset="img/2019-watch.jpg" type="image/jpeg">
+                <img class="smaller rounded" alt="AI smartwatch for NodeConf EU" src="img/2019-watch.jpg"  width="1600" height="1066" loading="lazy">
+            </picture>
             <div class="description">
                 <p>
                     Developed the hand-gesture recognition machine learning model for the IoT smartwatch badge,
