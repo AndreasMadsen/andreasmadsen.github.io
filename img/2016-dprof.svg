@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="132.3" height="56.88" version="1.1" viewBox="0 0 500 215" xmlns="http://www.w3.org/2000/svg">
+ <rect y="-.1671" width="500" height="70" fill="#f3f3f3"/>
+ <path d="m10 54.08h223.5v-14.75h66.66v-14.75h43.22v14.75h54.71v-14.75h17.44v-14.75h13.24v14.75h29.22v-14.75h9.517v14.75h2.682v14.75h19.75v30.5h-480z" fill="#4682b4"/>
+ <g transform="translate(0 -120.2)" font-family="sans-serif" font-size="10px" text-anchor="middle">
+  <text x="10" y="205" dy="0">0</text>
+  <text x="58.331501" y="205" dy="0">0.001</text>
+  <text x="106.663" y="205" dy="0">0.002</text>
+  <text x="154.994" y="205" dy="0">0.003</text>
+  <text x="203.326" y="205" dy="0">0.004</text>
+  <text x="251.657" y="205" dy="0">0.005</text>
+  <text x="299.98901" y="205" dy="0">0.006</text>
+  <text x="348.32001" y="205" dy="0">0.007</text>
+  <text x="396.65201" y="205" dy="0">0.008</text>
+  <text x="444.983" y="205" dy="0">0.009</text>
+  <g stroke="#000">
+   <line x2="500" y1="190" y2="190"/>
+   <line x1="10" x2="10" y1="214" y2="208"/>
+   <line x1="58.33" x2="58.33" y1="214" y2="208"/>
+   <line x1="106.7" x2="106.7" y1="214" y2="208"/>
+   <line x1="155" x2="155" y1="214" y2="208"/>
+   <line x1="203.3" x2="203.3" y1="214" y2="208"/>
+   <line x1="251.7" x2="251.7" y1="214" y2="208"/>
+   <line x1="300" x2="300" y1="214" y2="208"/>
+   <line x1="348.3" x2="348.3" y1="214" y2="208"/>
+   <line x1="396.7" x2="396.7" y1="214" y2="208"/>
+   <line x1="445" x2="445" y1="214" y2="208"/>
+   <path d="m10 208v6h480v-6" fill="none"/>
+  </g>
+ </g>
+ <g transform="translate(0 -120.2)">
+  <g stroke="#f3f3f3" stroke-width="20px">
+   <path d="m10 245h480"/>
+   <path d="m10 285h480"/>
+   <path d="m10 325h480"/>
+  </g>
+  <g stroke="#cd5c5c" stroke-width="12px">
+   <path d="m10 225h331.8"/>
+   <path d="m369.2 265h54.25"/>
+   <path d="m433.6 285h8.305"/>
+   <path d="m445.5 305h19.1"/>
+   <path d="m473 325h6.25"/>
+  </g>
+  <g stroke="#4682b4" stroke-width="6px">
+   <path d="m250.6 245h239.4" opacity=".5"/>
+   <path d="m10 225m331.8 0h1.593"/>
+   <path d="m233.5 245h17.09"/>
+   <path d="m300.2 265h69m54.25 0h5.374"/>
+   <path d="m398.1 285h35.51m8.305 0h25.62"/>
+   <path d="m415.6 305h29.91m19.1 0h5.661"/>
+   <path d="m458 325h15m6.25 0h10.71"/>
+  </g>
+  <g stroke="rgba(0, 0, 0, 0.7)" stroke-width="2px">
+   <path d="m232.5 231v17"/>
+   <path d="m299.2 231v37"/>
+   <path d="m397.1 271v17"/>
+   <path d="m414.6 271v37"/>
+   <path d="m457 311v17"/>
+  </g>
+ </g>
+</svg>
