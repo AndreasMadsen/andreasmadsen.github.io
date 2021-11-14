@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg font-size="14px" version="1.1" viewBox="0 0 369 154.2" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-15.5 -375.3)">
+  <path d="m304 375.8h70c5.54 0 10 4.46 10 10v51.6c0 5.54-4.46 10-10 10h-70c-.001-23.87-.002-47.73 0-71.6z" fill="#eee" stroke="#e0e0e0" stroke-width="1px"/>
+  <path d="m26 375.9h278c-.002 23.87-.001 47.73.00047 71.6h-278c-5.54 0-10-4.46-10-10v-51.6c0-5.54 4.46-10 10-10z" fill="#365d8d" stroke="#365d8d" stroke-width="1px"/>
+  <text x="325.46191" y="416.60498" fill="#555555" font-family="'Helvetica Neue', sans-serif">LSTM</text>
+  <g fill="#355e8d">
+   <rect x="73.47" y="384.4" width="8.413" height="18.8"/>
+   <rect x="81.89" y="384.4" width="8.413" height="18.8"/>
+   <rect x="166" y="384.4" width="8.413" height="18.8"/>
+   <rect x="174.4" y="384.4" width="8.413" height="18.8"/>
+   <rect x="73.47" y="384.4" width="8.413" height="18.8"/>
+   <rect x="81.89" y="384.4" width="8.413" height="18.8"/>
+   <rect x="166" y="384.4" width="8.413" height="18.8"/>
+   <rect x="174.4" y="384.4" width="8.413" height="18.8"/>
+  </g>
+  <g fill="#355f8d">
+   <rect x="65.06" y="384.4" width="8.413" height="18.8"/>
+   <rect x="199.7" y="384.4" width="8.413" height="18.8"/>
+   <rect x="258.6" y="384.4" width="8.413" height="18.8"/>
+   <rect x="199.7" y="384.4" width="8.413" height="18.8"/>
+   <rect x="258.6" y="384.4" width="8.413" height="18.8"/>
+   <rect x="65.06" y="384.4" width="8.413" height="18.8"/>
+  </g>
+  <rect x="216.5" y="384.4" width="8.413" height="18.8" fill="#33628d"/>
+  <rect x="216.5" y="384.4" width="8.413" height="18.8" fill="#33628d"/>
+  <rect x="224.9" y="384.4" width="8.413" height="18.8" fill="#34608d"/>
+  <rect x="224.9" y="384.4" width="8.413" height="18.8" fill="#34608d"/>
+  <rect x="241.7" y="384.4" width="8.413" height="18.8" fill="#35b779"/>
+  <rect x="241.7" y="384.4" width="8.413" height="18.8" fill="#35b779"/>
+  <rect x="250.1" y="384.4" width="8.413" height="18.8" fill="#2a778e"/>
+  <rect x="250.1" y="384.4" width="8.413" height="18.8" fill="#2a778e"/>
+  <rect x="23" y="403.6" width="8.413" height="18.8" fill="#2c738e"/>
+  <rect x="23" y="403.6" width="8.413" height="18.8" fill="#2c738e"/>
+  <g fill="#32648e">
+   <rect x="208.1" y="384.4" width="8.413" height="18.8"/>
+   <rect x="233.3" y="384.4" width="8.413" height="18.8"/>
+   <rect x="208.1" y="384.4" width="8.413" height="18.8"/>
+   <rect x="233.3" y="384.4" width="8.413" height="18.8"/>
+  </g>
+  <g fill="#fff" font-family="monospace">
+   <text x="23" y="400.39999"/>
+   <text x="31.4125" y="400.39999">c</text>
+   <text x="39.825001" y="400.39999">o</text>
+   <text x="48.237499" y="400.39999">n</text>
+   <text x="56.650002" y="400.39999">t</text>
+   <text x="65.0625" y="400.39999">e</text>
+   <text x="73.474998" y="400.39999">x</text>
+   <text x="81.887505" y="400.39999">t</text>
+   <text x="90.300003" y="400.39999"/>
+   <text x="98.712502" y="400.39999">t</text>
+   <text x="107.125" y="400.39999">h</text>
+   <text x="115.5375" y="400.39999">e</text>
+   <text x="123.95" y="400.39999"/>
+   <text x="132.3625" y="400.39999">f</text>
+   <text x="140.77501" y="400.39999">o</text>
+   <text x="149.1875" y="400.39999">r</text>
+   <text x="157.60001" y="400.39999">m</text>
+   <text x="166.0125" y="400.39999">a</text>
+   <text x="174.425" y="400.39999">l</text>
+   <text x="182.83751" y="400.39999"/>
+   <text x="191.25" y="400.39999">s</text>
+   <text x="199.66251" y="400.39999">t</text>
+   <text x="208.075" y="400.39999">u</text>
+   <text x="216.4875" y="400.39999">d</text>
+   <text x="224.90001" y="400.39999">y</text>
+   <text x="233.3125" y="400.39999"/>
+   <text x="241.72501" y="400.39999">o</text>
+   <text x="250.1375" y="400.39999">f</text>
+   <text x="258.55002" y="400.39999"/>
+   <text x="23" y="419.60001">g</text>
+   <text x="31.4125" y="419.60001">r</text>
+   <text x="39.825001" y="419.60001">a</text>
+   <text x="48.237499" y="419.60001">m</text>
+   <text x="56.650002" y="419.60001">m</text>
+   <text x="65.0625" y="419.60001">a</text>
+   <text x="73.474998" y="419.60001">r</text>
+   <text x="81.887505" y="419.60001"/>
+   <text x="90.300003" y="419.60001">i</text>
+   <text x="98.712502" y="419.60001">s</text>
+   <text x="107.125" y="419.60001"/>
+   <text x="115.5375" y="419.60001">a</text>
+   <text x="123.95" y="419.60001">n</text>
+   <text x="132.3625" y="419.60001"/>
+   <text x="140.77501" y="419.60001">i</text>
+   <text x="149.1875" y="419.60001">m</text>
+   <text x="157.60001" y="419.60001">p</text>
+   <text x="166.0125" y="419.60001">o</text>
+   <text x="174.425" y="419.60001">r</text>
+   <text x="182.83751" y="419.60001">t</text>
+   <text x="191.25" y="419.60001">a</text>
+   <text x="199.66251" y="419.60001">n</text>
+   <text x="208.075" y="419.60001">t</text>
+   <text x="216.4875" y="419.60001"/>
+   <text x="224.90001" y="419.60001">p</text>
+   <text x="233.3125" y="419.60001">a</text>
+   <text x="241.72501" y="419.60001">r</text>
+   <text x="250.1375" y="419.60001">t</text>
+   <text x="258.55002" y="419.60001"/>
+   <text x="266.96249" y="419.60001">o</text>
+   <text x="275.375" y="419.60001">f</text>
+   <text x="283.78751" y="419.60001"/>
+   <text x="23" y="438.80002">e</text>
+   <text x="31.4125" y="438.80002">d</text>
+   <text x="39.825001" y="438.80002">u</text>
+   <text x="56.650002" y="438.80002">a</text>
+   <text x="56.650002" y="438.80002">a</text>
+   <text x="48.237499" y="438.80002">c</text>
+   <text x="65.0625" y="438.80002">t</text>
+   <text x="73.474998" y="438.80002">i</text>
+   <text x="81.887505" y="438.80002">o</text>
+   <text x="90.300003" y="438.80002">n</text>
+  </g>
+  <line x1="23" x2="31.41" y1="422.4" y2="422.4" stroke="#fff" stroke-linecap="square" stroke-width="2.8px"/>
+ </g>
+ <g transform="translate(-15.5 -375.3)">
+  <path d="m304 457.4h70c5.54 0 10 4.46 10 10v51.6c0 5.54-4.46 10-10 10h-70c-.001-23.87-.002-47.73 0-71.6z" fill="#eee" stroke="#e0e0e0" stroke-width="1px"/>
+  <path d="m26 457.4h278c-.001 23.87-.002 47.73 0 71.6h-278c-5.54 0-10-4.46-10-10v-51.6c0-5.54 4.46-10 10-10z" fill="#365d8d" stroke="#365d8d" stroke-width="1px"/>
+  <text x="329.04581" y="498.20499" fill="#555555" font-family="'Helvetica Neue', sans-serif">GRU</text>
+  <g transform="translate(0 -.09914)">
+   <rect x="65.06" y="466" width="8.413" height="18.8" fill="#2d708e"/>
+   <rect x="73.47" y="466" width="8.413" height="18.8" fill="#30698e"/>
+   <rect x="81.89" y="466" width="8.413" height="18.8" fill="#34608d"/>
+   <rect x="166" y="466" width="8.413" height="18.8" fill="#34608d"/>
+   <rect x="149.2" y="466" width="8.413" height="18.8" fill="#33638d"/>
+   <rect x="157.6" y="466" width="8.413" height="18.8" fill="#34618d"/>
+   <g fill="#355e8d">
+    <rect x="115.5" y="466" width="8.413" height="18.8"/>
+    <rect x="23" y="466" width="8.413" height="18.8"/>
+    <rect x="48.24" y="466" width="8.413" height="18.8"/>
+    <rect x="124" y="466" width="8.413" height="18.8"/>
+    <rect x="174.4" y="466" width="8.413" height="18.8"/>
+    <rect x="182.8" y="466" width="8.413" height="18.8"/>
+   </g>
+   <rect x="191.2" y="466" width="8.413" height="18.8" fill="#2f6c8e"/>
+   <rect x="199.7" y="466" width="8.413" height="18.8" fill="#2a768e"/>
+   <rect x="208.1" y="466" width="8.413" height="18.8" fill="#35b779"/>
+   <rect x="216.5" y="466" width="8.413" height="18.8" fill="#218f8d"/>
+   <rect x="224.9" y="466" width="8.413" height="18.8" fill="#1f9e89"/>
+   <rect x="241.7" y="466" width="8.413" height="18.8" fill="#32648e"/>
+   <g fill="#33628d">
+    <rect x="56.65" y="466" width="8.413" height="18.8"/>
+    <rect x="233.3" y="466" width="8.413" height="18.8"/>
+    <rect x="250.1" y="466" width="8.413" height="18.8"/>
+   </g>
+   <rect x="258.6" y="466" width="8.413" height="18.8" fill="#31688e"/>
+   <rect x="23" y="485.2" width="8.413" height="18.8" fill="#2e6d8e"/>
+   <g fill="#fff" font-family="monospace">
+    <text x="23" y="482"/>
+    <text x="31.4125" y="482">c</text>
+    <text x="39.825001" y="482">o</text>
+    <text x="48.237499" y="482">n</text>
+    <text x="56.650002" y="482">t</text>
+    <text x="65.0625" y="482">e</text>
+    <text x="73.474998" y="482">x</text>
+    <text x="81.887505" y="482">t</text>
+    <text x="90.300003" y="482"/>
+    <text x="98.712502" y="482">t</text>
+    <text x="107.125" y="482">h</text>
+    <text x="115.5375" y="482">e</text>
+    <text x="123.95" y="482"/>
+    <text x="132.3625" y="482">f</text>
+    <text x="140.77501" y="482">o</text>
+    <text x="149.1875" y="482">r</text>
+    <text x="157.60001" y="482">m</text>
+    <text x="166.0125" y="482">a</text>
+    <text x="174.425" y="482">l</text>
+    <text x="182.83751" y="482"/>
+    <text x="191.25" y="482">s</text>
+    <text x="199.66251" y="482">t</text>
+    <text x="208.075" y="482">u</text>
+    <text x="216.4875" y="482">d</text>
+    <text x="224.90001" y="482">y</text>
+    <text x="233.3125" y="482"/>
+    <text x="241.72501" y="482">o</text>
+    <text x="250.1375" y="482">f</text>
+    <text x="258.55002" y="482"/>
+    <text x="23" y="501.20001">g</text>
+    <text x="31.4125" y="501.20001">r</text>
+    <text x="39.825001" y="501.20001">a</text>
+    <text x="48.237499" y="501.20001">m</text>
+    <text x="56.650002" y="501.20001">m</text>
+    <text x="65.0625" y="501.20001">a</text>
+    <text x="73.474998" y="501.20001">r</text>
+    <text x="81.887505" y="501.20001"/>
+    <text x="90.300003" y="501.20001">i</text>
+    <text x="98.712502" y="501.20001">s</text>
+    <text x="107.125" y="501.20001"/>
+    <text x="115.5375" y="501.20001">a</text>
+    <text x="123.95" y="501.20001">n</text>
+    <text x="132.3625" y="501.20001"/>
+    <text x="140.77501" y="501.20001">i</text>
+    <text x="149.1875" y="501.20001">m</text>
+    <text x="157.60001" y="501.20001">p</text>
+    <text x="166.0125" y="501.20001">o</text>
+    <text x="174.425" y="501.20001">r</text>
+    <text x="182.83751" y="501.20001">t</text>
+    <text x="191.25" y="501.20001">a</text>
+    <text x="199.66251" y="501.20001">n</text>
+    <text x="208.075" y="501.20001">t</text>
+    <text x="216.4875" y="501.20001"/>
+    <text x="224.90001" y="501.20001">p</text>
+    <text x="233.3125" y="501.20001">a</text>
+    <text x="241.72501" y="501.20001">r</text>
+    <text x="250.1375" y="501.20001">t</text>
+    <text x="258.55002" y="501.20001"/>
+    <text x="266.96249" y="501.20001">o</text>
+    <text x="275.375" y="501.20001">f</text>
+    <text x="283.78751" y="501.20001"/>
+    <text x="23" y="520.40002">e</text>
+    <text x="31.4125" y="520.40002">d</text>
+    <text x="39.825001" y="520.40002">u</text>
+    <text x="48.237499" y="520.40002">c</text>
+    <text x="56.650002" y="520.40002">a</text>
+    <text x="65.0625" y="520.40002">t</text>
+    <text x="73.474998" y="520.40002">i</text>
+    <text x="81.887505" y="520.40002">o</text>
+    <text x="90.300003" y="520.40002">n</text>
+   </g>
+  </g>
+  <line x1="23" x2="31.41" y1="504" y2="504" stroke="#fff" stroke-linecap="square" stroke-width="2.8px"/>
+ </g>
+</svg>
