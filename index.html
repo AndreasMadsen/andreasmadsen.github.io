@@ -282,8 +282,8 @@
                 <div class="title">Textual Heatmap – pip package</div>
                 <div class="period">Mar 2020</div>
             </header>
-            <video playsinline loop autoplay muted>
-                <source src="img/2020-textual-heatmap.mp4" type="video/mp4">
+            <video playsinline loop autoplay muted data-loading="lazy">
+                <source data-src="img/2020-textual-heatmap.mp4" type="video/mp4">
             </video>
             <div class="description">
                 <p>
@@ -324,8 +324,8 @@
                 <div class="title">lrcurve – pip package</div>
                 <div class="period">Nov 2019</div>
             </header>
-            <video playsinline loop autoplay muted>
-                <source src="img/2019-lrcurve.mp4" type="video/mp4">
+            <video playsinline loop autoplay muted data-loading="lazy">
+                <source data-src="img/2019-lrcurve.mp4" type="video/mp4">
             </video>
             <div class="description">
                 <p>
@@ -494,8 +494,8 @@
                 <div class="title">Clinic.js Bubbleprof – NearForm Research</div>
                 <div class="period">Jul 2018</div>
             </header>
-            <video class="smaller" playsinline loop autoplay muted>
-                <source src="img/2018-clinic-bubbleprof.mp4" type="video/mp4">
+            <video class="smaller" playsinline loop autoplay muted data-loading="lazy">
+                <source data-src="img/2018-clinic-bubbleprof.mp4" type="video/mp4">
             </video>
             <div class="description">
                 <p>
@@ -519,8 +519,8 @@
                 <div class="title">First release of Clinic.js (Doctor) – NearForm Research</div>
                 <div class="period">Jan 2018</div>
             </header>
-            <video class="smaller" playsinline loop autoplay muted>
-                <source src="img/2018-clinic-doctor.mp4" type="video/mp4">
+            <video class="smaller" playsinline loop autoplay muted data-loading="lazy">
+                <source data-src="img/2018-clinic-doctor.mp4" type="video/mp4">
             </video>
             <div class="description">
                 <p>
@@ -701,6 +701,26 @@
                   })();
               </script>
         </article>
-      </section>
+    </section>
+    <script>
+        if (window.hasOwnProperty('IntersectionObserver')) {
+            document.addEventListener("DOMContentLoaded", function () {
+                const observer = new IntersectionObserver(function (entries, observer) {
+                    for (let video of entries) {
+                        if (!video.isIntersecting) continue;
+                        observer.unobserve(video.target);
+                        for (let source of video.target.getElementsByTagName('source')) {
+                            source.src = source.dataset.src;
+                        }
+                        video.target.load();
+                    }
+                }, { rootMargin: '200px' });
+
+                for (let videoElem of document.querySelectorAll("video[data-loading='lazy']")) {
+                    observer.observe(videoElem);
+                }
+            });
+        }
+    </script>
 </body>
 </html>
