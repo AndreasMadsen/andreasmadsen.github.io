@@ -1,8 +1,13 @@
-
 html {
     font-family: 'Raleway', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
 }
 
 header, h1, h2, h3, h4, h5, h6 {
@@ -10,8 +15,17 @@ header, h1, h2, h3, h4, h5, h6 {
     page-break-after: avoid;
 }
 
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
 a {
-    color: rgb(46, 135, 208);
+    color: rgb(34, 121, 193);
+}
+
+b, strong {
+    font-weight: bolder;
 }
 
 p, ul {
@@ -415,7 +429,7 @@ section.content.categorized article header {
 }
 
 section.content.categorized article header h2, .content.categorized header div {
-    color: rgb(46, 135, 208);
+    color: rgb(34, 121, 193);
     font-size: 11pt;
     line-height: 1.25em;
     margin: 0;
@@ -424,7 +438,7 @@ section.content.categorized article header h2, .content.categorized header div {
 section.content.categorized article header .name {
     grid-area: name;
 
-    border-right: 1px solid rgb(46, 135, 208);
+    border-right: 1px solid rgb(34, 121, 193);
     padding-right: 5px;
     text-align: right;
 }
