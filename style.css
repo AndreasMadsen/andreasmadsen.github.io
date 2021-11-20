@@ -1,11 +1,11 @@
 
 html {
-    font-family: 'Raleway', 'Helvetica Neue', sans-serif;
+    font-family: 'Raleway', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+header, h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
     page-break-after: avoid;
 }
@@ -44,8 +44,6 @@ header#top {
     background: white;
     border-bottom: 1px solid #ddd;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-
-    font-family: 'Roboto Slab', serif;
 }
 
 @media screen and (max-width: 660px) {
@@ -434,14 +432,12 @@ section.content.categorized article header .name {
 section.content.categorized article header .title {
     grid-area: title;
 
-    font-family: 'Roboto Slab', serif;
     font-weight: 300;
 }
 
 section.content.categorized article header .period {
     grid-area: period;
 
-    font-family: 'Roboto Slab', serif;
     font-weight: 300;
     text-transform: uppercase;
     text-align: right;
