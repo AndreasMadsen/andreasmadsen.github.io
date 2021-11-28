@@ -1,10 +1,4 @@
 ;(function () {
-    if (document.readyState == "complete" || document.readyState == "loaded" || document.readyState == "interactive") {
-        setTimeout(ready, 0);
-    } else {
-        window.addEventListener('DOMContentLoaded', ready);
-    }
-
     class PortfolioItem {
         constructor(element) {
             this.element = element;
@@ -153,5 +147,11 @@
 
         // Hack to not include the profile description and contact in print
         document.documentElement.classList.toggle('no-profile', window.location.hash.includes('/no-profile/'));
+    }
+
+    if (document.readyState == "complete" || document.readyState == "loaded" || document.readyState == "interactive") {
+        ready();
+    } else {
+        window.addEventListener('DOMContentLoaded', ready);
     }
 })();
