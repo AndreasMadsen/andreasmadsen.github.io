@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="435.782" height="155.461" version="1.1" viewBox="0 0 115.301 41.1325" xmlns="http://www.w3.org/2000/svg" >
  <defs>
-  <filter id="a" y="-30%" x="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+  <filter id="a" y="-5" x="-5" height="110" width="150" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
    <feTurbulence baseFrequency="0.686 0.929" numOctaves="5" type="fractalNoise"/>
    <feDiffuseLighting lighting-color="#ffffff" diffuseConstant="1.02" numOctaves="5" surfaceScale="0.4">
     <feDistantLight azimuth="290" elevation="52"/>
@@ -9,10 +9,11 @@
    <feComposite in2="SourceAlpha" operator="in"/>
    <feBlend in2="SourceGraphic" mode="color-burn"/>
    <feColorMatrix result="textured" values="1.14 0 0 0 0 0 1.14 0 0 0 0 0 1.14 0 0 0 0 0 1 0 "/>
-   <feTurbulence baseFrequency="0.3" numOctaves="4" result="noise"/>
+   <feTurbulence baseFrequency="0.8" numOctaves="4" result="noise"/>
    <feDisplacementMap in="textured" in2="noise" scale="0.3" xChannelSelector="R" yChannelSelector="G"/>
-  </filter>
+   </filter>
  </defs>
+ <g shape-rendering="geometricPrecision">
  <g transform="translate(-11.56609 -59.11942)">
   <ellipse cx="87.3986" cy="90.5933" rx="15.9961" ry="2.44064" fill="#c8bfc7" filter="url(#a)"/>
   <path d="m99.867 84.728c-0.0739 5.97131-2.84544 7.13178-11.9852 6.72761-11.1467-0.492922-16.1841-0.511591-15.8288-5.49374 0.641494-8.99566 3.8409-13.6336 15.9435-13.6824 7.22146-0.02909 11.9559 5.54948 11.8705 12.4485z" fill="#b6d9d3" filter="url(#a)" stroke="#7bbcba" stroke-width=".785283"/>
@@ -40,5 +41,6 @@
   <g transform="translate(-11.64301 -59.2134)">
    <path d="m63.5099 92.2145-0.26506 0.28046 3.37484 2.34545c-0.498201 0.502663-0.983674 0.974136-1.10624 1.67386-0.054 0.308298 0.312123 1.20136 0.658577 1.43051 0.462546 0.305943 1.42425 0.722128 1.9303 0.827315 0.396333-0.31954 0.533193-1.30636 0.644583-1.87014-0.18075-0.509996-0.341626-0.845594-0.828211-1.27913-0.03936-0.157662 0.118586-0.338621 0.360675-0.415868 0.254567-0.149564 0.342084-0.246806 0.718736-0.335385 0.383988-0.715008 0.291351-1.3736 0.337556-1.92353l-1.07896-0.129529c-0.936312-0.112403-1.00759 0.89878-1.2205 1.52166z" fill="#c8bfc7" filter="url(#a)"/>
    <path d="m63.2949 92.4401-0.213713-0.290037 0.358465-3.05242c0.03663-0.311909-0.08269-0.270501-0.205814-0.275395-0.495109-0.01968-1.04818 0.0059-1.60994 0.06969-0.693464 0.07875-1.87413-0.495143-1.85929-1.03803 0.03961-1.4489 0.912439-2.4228 1.27104-3.10133 0.703939 0.215139 2.11009 1.19258 2.73726 1.64034 0.06264 0.32141-0.220826 1.06229 0.07154 1.10127l0.228977 0.03053c0.155848 0.02078 0.462455-0.935777 0.964327-1.00922 0.921098 0.245811 1.84872 0.968162 2.66572 1.75984-0.496934 0.65468-1.20009 1.19986-2.19295 1.6482-0.521583-0.05758-1.06692-0.611557-1.31498-0.918083-0.07509-0.09279-0.09415-0.04266-0.151567 0.137386-0.209893 0.658146-0.223433 2.2919-0.390574 3.37949-0.151929-0.013-0.248035-0.177949-0.358506-0.08221z" fill="#39aaaa" filter="url(#a)"/>
+  </g>
   </g>
 </svg>
