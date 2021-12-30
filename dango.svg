@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="435.782" height="155.461" version="1.1" viewBox="0 0 115.301 41.1325" xmlns="http://www.w3.org/2000/svg" >
  <defs>
-  <filter id="a" y="-5" x="-5" height="110" width="150" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-   <feTurbulence baseFrequency="0.686 0.929" numOctaves="5" type="fractalNoise"/>
-   <feDiffuseLighting lighting-color="#ffffff" diffuseConstant="1.02" numOctaves="5" surfaceScale="0.4">
-    <feDistantLight azimuth="290" elevation="52"/>
-   </feDiffuseLighting>
+  <filter id="a" x="-.110691" y="-.0842402" width="1.22138" height="1.16848" color-interpolation-filters="sRGB">
+   <feTurbulence baseFrequency="0.79 1" numOctaves="4" type="fractalNoise"/>
+   <feComponentTransfer>
+    <feFuncR intercept="0.49" slope="0.49" type="linear"/>
+   </feComponentTransfer>
+   <feColorMatrix values="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1"/>
    <feComposite in2="SourceAlpha" operator="in"/>
    <feBlend in2="SourceGraphic" mode="color-burn"/>
-   <feColorMatrix result="textured" values="1.14 0 0 0 0 0 1.14 0 0 0 0 0 1.14 0 0 0 0 0 1 0 "/>
+   <feColorMatrix result="textured" values="1.1 0 0 0 0 0 1.1 0 0 0 0 0 1.1 0 0 0 0 0 1 0 "/>
    <feTurbulence baseFrequency="0.8" numOctaves="4" result="noise"/>
    <feDisplacementMap in="textured" in2="noise" scale="0.3" xChannelSelector="R" yChannelSelector="G"/>
-   </filter>
+  </filter>
  </defs>
  <g shape-rendering="geometricPrecision">
  <g transform="translate(-11.56609 -59.11942)">

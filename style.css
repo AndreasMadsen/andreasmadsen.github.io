@@ -590,7 +590,11 @@ section.content#portfolio article > ul.links {
 }
 
 img#bottom-image {
-    width: 100%;
+    /* Hack to make iOS render at 2x resolution */
+    width: 200%;
     height: 100%;
     object-fit: contain;
+    transform: scale3d(0.5,0.5,0.5) translate(-50%, -50%);
+    margin-bottom: -50%;
+    margin-right: -100%;
 }
