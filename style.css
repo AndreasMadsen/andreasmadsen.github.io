@@ -284,6 +284,7 @@ section.content article > ul.links li::after {
 
 section.content#contact {
     margin-bottom: 0em;
+    overflow: hidden;
 }
 
 section.content#about {
@@ -595,6 +596,6 @@ img#bottom-image {
     height: 100%;
     object-fit: contain;
     transform: scale3d(0.5,0.5,0.5) translate(-50%, -50%);
-    margin-bottom: -50%;
+    margin-bottom: -35%;
     margin-right: -100%;
 }
