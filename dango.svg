@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="424.594" height="151.292" version="1.1" viewBox="0 0 112.341 40.0294" xmlns="http://www.w3.org/2000/svg">
  <defs>
-  <filter id="a" x="-.110691" y="-.0842402" width="1.22138" height="1.16848" color-interpolation-filters="sRGB">
+  <filter id="a" x="-.14" y="-.14" width="1.28" height="1.28" color-interpolation-filters="sRGB">
    <feTurbulence baseFrequency="0.793 1" numOctaves="4" result="noise-1" type="fractalNoise"/>
    <feTurbulence baseFrequency="0.726 1" numOctaves="3" result="noise-2"/>
    <feDisplacementMap in="noise-1" in2="noise-2" scale="2.5" xChannelSelector="R" yChannelSelector="G"/>
