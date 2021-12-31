@@ -2,18 +2,8 @@
 <svg width="429.992" height="155.66" version="1.1" viewBox="0 0 113.769 41.1852" xmlns="http://www.w3.org/2000/svg">
  <defs>
   <filter id="b" x="-.14" y="-.14" width="1.28" height="1.28" color-interpolation-filters="sRGB">
-   <feTurbulence baseFrequency="0.793 1" numOctaves="4" result="noise-1" type="fractalNoise"/>
-   <feTurbulence baseFrequency="0.726 1" numOctaves="3" result="result3"/>
-   <feDisplacementMap in="noise-1" in2="noise-2" scale="2.5" xChannelSelector="R" yChannelSelector="G"/>
-   <feComponentTransfer>
-    <feFuncR intercept="0.493" slope="0.493" type="linear"/>
-   </feComponentTransfer>
-   <feColorMatrix values="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1"/>
-   <feComposite in2="SourceAlpha" operator="in"/>
-   <feBlend in2="SourceGraphic" mode="color-burn"/>
-   <feColorMatrix result="textured" values="1.1 0 0 0 0 0 1.1 0 0 0 0 0 1.1 0 0 0 0 0 1 0 "/>
-   <feTurbulence baseFrequency="0.9" numOctaves="4" result="noise-3"/>
-   <feDisplacementMap in="textured" in2="noise-3" result="result1" scale="0.3" xChannelSelector="R" yChannelSelector="G"/>
+   <feTurbulence baseFrequency="0.9" numOctaves="4" result="noise"/>
+   <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.4" xChannelSelector="R" yChannelSelector="G"/>
   </filter>
   <filter id="a" x="-.14" y="-.14" width="1.28" height="1.28" color-interpolation-filters="sRGB">
    <feTurbulence baseFrequency="0.793 1" numOctaves="4" result="noise-1" type="fractalNoise"/>
@@ -27,9 +17,9 @@
    <feBlend in2="SourceGraphic" mode="color-burn"/>
    <feColorMatrix result="textured" values="1.1 0 0 0 0 0 1.1 0 0 0 0 0 1.1 0 0 0 0 0 1 0 "/>
    <feTurbulence baseFrequency="0.9" numOctaves="4" result="noise-3"/>
-   <feDisplacementMap in="textured" in2="noise-3" result="result1" scale="0.4" xChannelSelector="R" yChannelSelector="G"/>
-   <feMorphology in="SourceAlpha" radius="0.07" result="result4"/>
-   <feComposite in="result1" in2="result4" operator="in"/>
+   <feDisplacementMap in="textured" in2="noise-3" result="image" scale="0.4" xChannelSelector="R" yChannelSelector="G"/>
+   <feMorphology in="SourceAlpha" radius="0.07" result="clip"/>
+   <feComposite in="image" in2="clip" operator="in"/>
   </filter>
  </defs>
  <g transform="translate(4.64769 -30.206)" shape-rendering="geometricPrecision">
