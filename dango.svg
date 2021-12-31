@@ -8,7 +8,7 @@
   </filter>
   <filter id="paper" x="-.14" y="-.14" width="1.28" height="1.28" color-interpolation-filters="sRGB">
    <feTurbulence baseFrequency="0.793 1" numOctaves="4" result="noise-1" type="fractalNoise"/>
-   <feTurbulence baseFrequency="0.726 1" numOctaves="3" result="result3"/>
+   <feTurbulence baseFrequency="0.726 1" numOctaves="3" result="noise-2"/>
    <feDisplacementMap in="noise-1" in2="noise-2" scale="2.5" xChannelSelector="R" yChannelSelector="G"/>
    <feComponentTransfer>
     <feFuncR intercept="0.493" slope="0.493" type="linear"/>
