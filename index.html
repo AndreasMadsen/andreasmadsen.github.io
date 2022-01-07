@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
 
   <title>Andreas Madsen Portfolio</title>
   <meta name="description" content="Andreas Madsen – PhD candidate at Mila – Machine Learning – Portfolio">
@@ -12,37 +11,39 @@
   <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <style>
-    /* latin */
+    /* Store fonts locally. This is a one-page website, so caching fonts for more than
+       10 min, is less important than avoiding to create an extra HTTP connection. */
+    /* latin, 400 */
     @font-face {
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2) format('woff2');
+        src: url('fonts/raleway-v22-latin-regular.woff2') format('woff2');
     }
-    /* latin */
+    /* latin, 600 */
     @font-face {
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 600;
         font-display: swap;
-        src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2) format('woff2');
+        src: url('fonts/raleway-v22-latin-600.woff2') format('woff2');
     }
-    /* latin */
+    /* latin, 300 */
     @font-face {
         font-family: 'Roboto Slab';
         font-style: normal;
         font-weight: 300;
         font-display: swap;
-        src: url(https://fonts.gstatic.com/s/robotoslab/v16/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2) format('woff2');
+        src: url('fonts/roboto-slab-v16-latin-300.woff2') format('woff2');
     }
-    /* latin */
+    /* latin, 400 */
     @font-face {
         font-family: 'Roboto Slab';
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url(https://fonts.gstatic.com/s/robotoslab/v16/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2) format('woff2');
+        src: url('fonts/roboto-slab-v16-latin-regular.woff2') format('woff2');
     }
 
     html {
@@ -659,6 +660,15 @@
                 <li><a rel="noreferrer" href="https://youtu.be/IPH4C9cHJLg">video</a></li>
             </ul>
         </article>
+        <!--
+        <article>
+          <header>
+            <h2 class="name">Open Source</h2>
+            <div class="title">Node.js benchmark suite</div>
+            <div class="period">Jun 2016</div>
+          </header>
+        </article>
+        -->
         <article data-categories="publications">
             <header>
                 <h2 class="name">BSc. Thesis</h2>
@@ -688,6 +698,20 @@
             <h2 class="name">Open Source</h2>
             <div class="title">Trace</div>
             <div class="period">Mar 2014</div>
+          </header>
+        </article>
+        <article>
+          <header>
+            <h2 class="name">Open Source</h2>
+            <div class="title">JavaScript implementation of XorShift 128bit RNG</div>
+            <div class="period">Mar 2014</div>
+          </header>
+        </article>
+        <article>
+          <header>
+            <h2 class="name">Open Source</h2>
+            <div class="title">JavaScript implementation of Student's t-test</div>
+            <div class="period">Jul 2013</div>
           </header>
         </article>
         <article>
