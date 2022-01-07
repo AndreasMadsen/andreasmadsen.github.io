@@ -205,6 +205,10 @@ section.content article > ul.mentions::before {
     content: 'Mentions:';
     font-weight: 600;
 }
+section.content article > ul.mentions.awards::before {
+    content: 'Awards:';
+    font-weight: 600;
+}
 section.content article > ul.mentions li {
     display: inline;
 }
@@ -503,6 +507,7 @@ section.content#portfolio article {
     grid-template-rows: auto auto auto 1fr auto;
     grid-template-areas: "title title"
                          "img description"
+                         "img awards"
                          "img mentions"
                          "img margin"
                          "img links";
@@ -516,17 +521,18 @@ section.content#portfolio article.hidden {
 @media screen and (max-width: 660px) {
     section.content#portfolio article {
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto;
-        grid-template-areas: "title" "img" "description" "mentions" "links";
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: "title" "img" "description" "awards" "mentions" "links";
     }
 }
 
 @media print {
     section.content#portfolio article {
         grid-template-columns: 200px 1fr;
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
         grid-template-areas: "title title"
                              "img description"
+                             "awards awards"
                              "mentions mentions"
                              "links links";
     }
@@ -582,6 +588,10 @@ section.content#portfolio article > div.description {
     margin-bottom: 1em;
 }
 
+section.content#portfolio article > ul.mentions.awards {
+    grid-area: awards;
+    margin-bottom: 1em;
+}
 section.content#portfolio article > ul.mentions {
     grid-area: mentions;
     margin-bottom: 1em;
