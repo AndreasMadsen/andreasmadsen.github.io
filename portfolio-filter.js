@@ -24,13 +24,12 @@
     }
 
     class PortfolioCategory {
-        constructor(name, onclick) {
-            this.name = name;
-            this.enabled = false;
-
-            this.element = document.createElement('li');
-            this.element.append(name.replace('_', ' '));
+        constructor(element, onclick) {
+            this.element = element;
             this.element.addEventListener('click', () => onclick(this));
+            this.element.classList.remove('js-disabled');
+            this.name = this.element.dataset.filterTag;
+            this.enabled = false;
         }
 
         setEnabled(enabled) {
@@ -52,30 +51,17 @@
             this.items = [];
         }
 
+        loadCategories(elements) {
+            for (const element of elements) {
+                const controler = new PortfolioCategory(element, this.onCategorySelected.bind(this));
+                this.categories.set(controler.name, controler);
+            }
+        }
+
         loadItems(elements) {
             for (const element of elements) {
                 this.items.push(new PortfolioItem(element));
             }
-
-            for (const item of this.items) {
-                for (const category of item.categories) {
-                    if (!this.categories.has(category)) {
-                        this.categories.set(category, new PortfolioCategory(category, this.onCategorySelected.bind(this)));
-                    }
-                }
-            }
-        }
-
-        initButtons() {
-            // Create dynamic content
-            const ul = document.createElement('ul');
-
-            const categories = Array.from(this.categories.values())
-                .sort((a, b) => a.name.localeCompare(b.name))
-                .map((a) => a.element);
-
-            ul.append.apply(ul, categories);
-            document.getElementById('filter').append(ul);
         }
 
         onCategorySelected(category) {
@@ -132,8 +118,8 @@
 
     function ready() {
         const filter = new ProtofolioFilter();
+        filter.loadCategories(document.querySelectorAll('#filter ul li'));
         filter.loadItems(document.querySelectorAll('#portfolio article'));
-        filter.initButtons();
         filter.stateFromHash(window.location.hash);
         filter.draw();
 

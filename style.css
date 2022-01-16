@@ -499,6 +499,10 @@ section.content#portfolio #filter > ul > li.filter-enabled {
     color: #fff;
 }
 
+section.content#portfolio #filter > ul > li.js-disabled {
+    visibility: hidden;
+}
+
 section.content#portfolio article {
     margin-bottom: 2em;
 
