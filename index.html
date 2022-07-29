@@ -104,11 +104,10 @@
                 based on my past experiences as a freelancer in machine learning.
             </p>
             <p>
-                I've published 1) At <a href="https://openreview.net/forum?id=H1gNOeHKPS">ICLR 2020</a>,
-                where I received a spotlight award. 2) In the
-                <a href="https://distill.pub/2019/memorization-in-rnns/">Distill.pub</a> journal. 3) And
-                have two publications in review. – I've been interviewed several times about my
-                publications and work.
+                I've published 1) At <a href="https://openreview.net/forum?id=H1gNOeHKPS">ICLR 2020</a>, where I received a
+                spotlight award. 2) In the <a href="https://distill.pub/2019/memorization-in-rnns/">
+                Distill.pub</a> 3) At <a href="https://dl.acm.org/doi/10.1145/3546577">ACM Computing Surveys</a>.
+                – I've been interviewed and performed invited talks several times about my publications and work.
             </p>
             <p>
                 In the past, I worked as a Freelancer in Machine Learning for 3 years. One of my
@@ -151,6 +150,35 @@
         <article data-categories="publications highlights">
             <header>
                 <h2 class="name">Publication</h2>
+                <div class="title">Post-hoc Interpretability for Neural NLP: A Survey – ACM Computing Surveys</div>
+                <div class="period">Jul 2022</div>
+            </header>
+            <img alt="Post-hoc Interpretability for Neural NLP: A Survey" src="img/2021-survey-paper-toc.svg" width="594" height="475" loading="lazy">
+            <div class="description">
+                <p>
+                    A survey on post-hoc interpretability methods for Natural Language Processing (NLP). The
+                    survey covers 19 specific interpretability methods and cites more than 100 works. Each
+                    method is categorized by how it communicates, visualized in a comparative format, and
+                    its evaluation methodology is discussed.
+                </p>
+                <p>
+                    Beyond interpretability methods, the survey covers topics on motivation for interpretability
+                    and measures of interpretability. At last, we provide general insights, as well as our opinions
+                    on future directions and challenges.
+                </p>
+            </div>
+            <ul class="mentions">
+                <li><a rel="noreferrer" href="https://xainlp.github.io/kddtutorial/">Tutorial at KDD2021 by the XAI-NLP group</a></li>
+                <li><a rel="noreferrer" href="https://youtu.be/LZBrOTR1ItA">Keynote at BlackboxNLP|EMNLP 2021 by Sara Hooker</a></li>
+                <li><a rel="noreferrer" href="https://aionai.libsyn.com/chasing-aime">The AI with AI podcast by Andy Ilachinski and Dave Broyles</a></li>
+            </ul>
+            <ul class="links">
+                <li><a rel="noreferrer" href="https://dl.acm.org/doi/10.1145/3546577">paper</a></li>
+            </ul>
+        </article>
+        <article data-categories="publications highlights">
+            <header>
+                <h2 class="name">Publication</h2>
                 <div class="title">Evaluating the Faithfulness of Importance Measures in NLP by Recursively Masking Allegedly Important Tokens and Retraining - Pre-print</div>
                 <div class="period">Oct 2021</div>
             </header>
@@ -177,35 +205,6 @@
             <ul class="links">
                 <li><a rel="noreferrer" href="https://arxiv.org/abs/2110.08412">pre-print</a></li>
                 <li><a rel="noreferrer" href="https://github.com/AndreasMadsen/nlp-roar-interpretability">code</a></li>
-            </ul>
-        </article>
-        <article data-categories="publications highlights">
-            <header>
-                <h2 class="name">Publication</h2>
-                <div class="title">Post-hoc Interpretability for Neural NLP: A Survey - Pre-print</div>
-                <div class="period">Aug 2021</div>
-            </header>
-            <img alt="Post-hoc Interpretability for Neural NLP: A Survey" src="img/2021-survey-paper-toc.svg" width="594" height="475" loading="lazy">
-            <div class="description">
-                <p>
-                    A survey on post-hoc interpretability methods for Natural Language Processing (NLP). The
-                    survey covers 19 specific interpretability methods and cites more than 100 works. Each
-                    method is categorized by how it communicates, visualized in a comparative format, and
-                    its evaluation methodology is discussed.
-                </p>
-                <p>
-                    Beyond interpretability methods, the survey covers topics on motivation for interpretability
-                    and measures of interpretability. At last, we provide general insights, as well as our opinions
-                    on future directions and challenges.
-                </p>
-            </div>
-            <ul class="mentions">
-                <li><a rel="noreferrer" href="https://xainlp.github.io/kddtutorial/">Tutorial at KDD2021 by the XAI-NLP group</a></li>
-                <li><a rel="noreferrer" href="https://youtu.be/LZBrOTR1ItA">Keynote at BlackboxNLP|EMNLP 2021 by Sara Hooker</a></li>
-                <li><a rel="noreferrer" href="https://aionai.libsyn.com/chasing-aime">The AI with AI podcast by Andy Ilachinski and Dave Broyles</a></li>
-            </ul>
-            <ul class="links">
-                <li><a rel="noreferrer" href="https://arxiv.org/abs/2108.04840">pre-print</a></li>
             </ul>
         </article>
         <article data-categories="talks">
@@ -735,14 +734,26 @@
             <div class="period">Jul 2013</div>
           </header>
         </article>
-        <article>
-          <header>
-            <h2 class="name">Open Source</h2>
-            <div class="title">Node.js core - cluster module</div>
-            <div class="period">Jun 2012</div>
-          </header>
+    -->
+        <article data-categories="open_source">
+            <header>
+                <h2 class="name">Open Source</h2>
+                <div class="title">Node.js core - cluster module</div>
+                <div class="period">Jun 2012</div>
+            </header>
+            <img class="smaller" alt="Node.js async_hooks" src="img/2012-nodejs-cluster.svg" width="249" height="68" loading="lazy">
+            <div class="description">
+                <p>
+                    I was the main implementor of the <code>cluster</code> module for Node.js. This allowed developers to run a
+                    server on multiple CPU cores. Because JavaScript is single-threaded that was big news. Today this is less relevant
+                    because load balancers and containers have become the default scaling strategy.
+                </p>
+            </div>
+            <ul class="links">
+                <li><a rel="noreferrer" href="https://nodejs.org/dist/latest-v8.x/docs/api/cluster.html">documentation</a></li>
+                <li><a rel="noreferrer" href="https://web.archive.org/web/20121109224609/http://blog.nodejs.org/2012/06/25/node-v0-8-0/">Node.js 0.8.0 announcement</a></li>
+            </ul>
         </article>
-        -->
     </section>
     <section class="content categorized" id="contact">
         <h1 class="section-title"><span>Contact</span></h1>
