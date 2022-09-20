@@ -215,6 +215,10 @@ section.content article > ul.mentions.awards::before {
     content: 'Awards:';
     font-weight: 600;
 }
+section.content article > ul.mentions.reviews::before {
+    content: 'Reviews:';
+    font-weight: 600;
+}
 section.content article > ul.mentions li {
     display: inline;
 }
