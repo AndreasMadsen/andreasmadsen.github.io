@@ -160,7 +160,7 @@
                 <li class="js-disabled" data-filter-tag="talks">Talks</li>
             </ul>
         </div>
-        <article data-categories="products" itemprop="hasPart" itmetype="https://schema.org/Article" itemscope>
+        <article data-categories="products highlights" itemprop="hasPart" itmetype="https://schema.org/Article" itemscope>
             <meta itemprop="author" itemscope itemref="about">
             <header>
                 <h2 class="name">Product</h2>
@@ -184,8 +184,8 @@
                 <li><a rel="noreferrer" href="https://www.guidelabs.ai/post/meet-clarity/">announcement</a></li>
             </ul>
         </article>
-        <article data-categories="publications" itemprop="hasPart" itmetype="https://schema.org/Article" itemscope>
-            <meta itemprop="author" itemscope itemref="about">
+        <article data-categories="publications highlights" itemprop="hasPart" itmetype="https://schema.org/Article" itemscope>
+        <meta itemprop="author" itemscope itemref="about">
             <header>
                 <h2 class="name">Publication</h2>
                 <div class="title" itemprop="headline">Scaling Inherently Interpretable Language Models</div>
@@ -210,6 +210,26 @@
             <ul class="links">
                 <li><a rel="noreferrer" href="https://arxiv.org/abs/2608.07594">article</a></li>
                 <li><a rel="noreferrer" href="https://www.guidelabs.ai/papers/scaling-inherently-interpretable-language-models/">announcement</a></li>
+            </ul>
+        </article>
+        <article data-categories="open_source" itemprop="hasPart" itmetype="https://schema.org/Article" itemscope>
+            <meta itemprop="author" itemscope itemref="about">
+            <header>
+                <h2 class="name">Open Source</h2>
+                <div class="title" itemprop="headline">Distributed high-performance dataloader</div>
+                <div class="period" itemprop="datePublished" content="2026-06-18T12:00:00">Jun 2026</div>
+            </header>
+            <img alt="dataloader" src="img/2026-dataloader.png" width="802" height="434" class="smaller" loading="lazy" itemprop="image">
+            <div class="description" itemprop="abstract">
+                <p>
+                    Built a custom dataloader for training our 8B model with concepts at scale (1.1T tokens),
+                    as other scalable dataloaders didn’t allow us to store chunk-level concepts with the tokens.
+                    The dataloader was developed for scale, speed, correctness, and flexibility, avoiding the
+                    typical compromises of other dataloaders.
+                </p>
+            </div>
+            <ul class="links">
+                <li><a rel="noreferrer" href="https://www.guidelabs.ai/post/dataloader-how-we-built/">announcement</a></li>
             </ul>
         </article>
         <article data-categories="publications" itemprop="hasPart" itmetype="https://schema.org/Article" itemscope>
