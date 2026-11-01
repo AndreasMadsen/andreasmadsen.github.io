@@ -1,0 +1,30 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "personal-website",
+  "account_id": "94628315c88720697bdaaa20ed423923",
+  "routes": [
+    {
+      "pattern": "amadsen.org",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.amadsen.org",
+      "custom_domain": true
+    },
+    {
+      "pattern": "andreasm.org",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.andreasm.org",
+      "custom_domain": true
+    }
+  ],
+  "compatibility_date": "2026-10-23",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "."
+  }
+}

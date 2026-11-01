@@ -1,0 +1,37 @@
+# Local configuration and development files
+.wrangler/
+.dev.vars*
+.env*
+.npmrc
+node_modules/
+/wrangler.json
+/wrangler.jsonc
+/wrangler.toml
+/package.json
+/package-lock.json
+/pnpm-lock.yaml
+/yarn.lock
+/bun.lock
+/bun.lockb
+
+# Repository metadata and editor files
+.git/
+.github/
+.vscode/
+.idea/
+.assetsignore
+.gitignore
+.gitattributes
+.DS_Store
+
+# Documentation, tooling, and design references
+/README.md
+/AGENTS.md
+/Makefile
+/dango-refs/
+/could-do-better.txt
+
+# Server-side Pages files
+/_worker.js
+/_routes.json
+/functions
