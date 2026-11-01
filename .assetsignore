@@ -23,6 +23,7 @@ node_modules/
 .gitignore
 .gitattributes
 .DS_Store
+CNAME
 
 # Documentation, tooling, and design references
 /README.md
